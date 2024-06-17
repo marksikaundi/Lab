@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import Image from "next/image";
 import { useState } from "react";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Header() {
   return (
@@ -49,7 +50,7 @@ export default function Header() {
       </div>
 
       <div className="text-md hidden rounded border-2 border-green-700  p-3 text-black  md:block">
-        <Link href="profile">Go Profile</Link>
+        <Link href="account-profile">Go Profile</Link>
       </div>
 
       {/* mobile view */}
