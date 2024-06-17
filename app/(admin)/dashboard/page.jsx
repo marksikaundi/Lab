@@ -1,5 +1,6 @@
 "use client";
 
+import { CiLogout } from "react-icons/ci";
 import { SignOutButton, useUser } from "@clerk/nextjs";
 
 import { Button } from "@/components/ui/button";
@@ -27,7 +28,8 @@ export default function Component() {
       <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold">Coding Challenge Dashboard</h1>
         <div className="flex items-center gap-4">
-          Hello 👋, {user?.fullName} <SignOutButton>SignOut</SignOutButton>
+          Hello 👋, {user?.fullName} <SignOutButton><CiLogout className="cursor-pointer" />
+          </SignOutButton>
         </div>
       </header>
       <main className="flex-1 bg-gray-100 dark:bg-gray-800 p-6">
