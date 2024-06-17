@@ -1,35 +1,32 @@
-// "use client";
-
-// import React from "react";
-// import { SignOutButton, useUser } from "@clerk/nextjs";
-
-// export default function DashboardPage() {
-//     const { user } = useUser();
-
-//   return (
-//     <div>
-//       Hello, {user?.lastName} <SignOutButton>SignOut</SignOutButton>
-//     </div>
-//   );
-// }
 "use client";
 
 import { SignOutButton, useUser } from "@clerk/nextjs";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import {
+  Table,
+  TableHeader,
+  TableRow,
+  TableHead,
+  TableBody,
+  TableCell,
+} from "@/components/ui/table";
 
 export default function Component() {
-    const { user } = useUser();
+  const { user } = useUser();
   return (
     <div className="flex flex-col w-full min-h-screen">
       <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold">Coding Challenge Dashboard</h1>
         <div className="flex items-center gap-4">
-          
-          
           Hello 👋, {user?.fullName} <SignOutButton>SignOut</SignOutButton>
         </div>
       </header>
@@ -203,5 +200,5 @@ export default function Component() {
         </section>
       </main>
     </div>
-  )
+  );
 }
