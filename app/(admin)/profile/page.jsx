@@ -13,7 +13,7 @@ export default function Component() {
         <div className="absolute -bottom-12 left-6">
           <Avatar className="w-24 h-24 border-4 border-white dark:border-gray-950">
             <AvatarImage src="https://github.com/shadcn.png" />
-            <AvatarFallback>MS</AvatarFallback>
+            <AvatarFallback></AvatarFallback>
           </Avatar>
         </div>
       </div>
