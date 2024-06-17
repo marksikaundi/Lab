@@ -48,7 +48,7 @@ export default function Header() {
         </nav>
       </div>
       <div className="text-md hidden rounded border-2 border-white bg-black  p-3 text-white  md:block">
-        <Link href="https://app.lupleg.website">Sign In</Link>
+        <Link href="/sign-in">Sign In</Link>
       </div>
       {/* mobile view */}
       <Sheet>
