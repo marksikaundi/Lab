@@ -160,7 +160,7 @@ export default function Component() {
           </div>
         </section>
         <section>
-          <h2 className="text-lg font-bold mb-4">Leaderboard</h2>
+          <h2 className="text-lg font-bold mb-4">Leaderboard 🏆</h2>
           <Card>
             <Table>
               <TableHeader>
