@@ -27,7 +27,7 @@ export default function Careers() {
       id: 1,
       title: "Senior Frontend Developer",
       type: "frontend",
-      location: "New York, NY",
+      location: "Remote",
       experience: "senior",
       description:
         "We are looking for an experienced frontend developer to join our team. You will be responsible for building and maintaining our web application using React, Redux, and other modern web technologies.",
@@ -36,7 +36,7 @@ export default function Careers() {
       id: 2,
       title: "Junior Backend Engineer",
       type: "backend",
-      location: "San Francisco, CA",
+      location: "Remote",
       experience: "junior",
       description:
         "We are seeking a talented junior backend engineer to join our growing team. You will be responsible for designing and implementing scalable and efficient backend systems using Node.js and MongoDB.",
@@ -54,7 +54,7 @@ export default function Careers() {
       id: 4,
       title: "Senior Backend Developer",
       type: "backend",
-      location: "Chicago, IL",
+      location: "Lusaka, Zambia",
       experience: "senior",
       description:
         "We are seeking an experienced backend developer to join our team. You will be responsible for designing and implementing scalable and efficient backend systems using Python and PostgreSQL.",
@@ -76,6 +76,15 @@ export default function Careers() {
       experience: "entry-level",
       description:
         "We are seeking a motivated and talented technical writer intern to join our team. You will be responsible for creating and maintaining high-quality documentation for our products and services.",
+    },
+    {
+      id: 7,
+      title: "WordPress Developer Intern",
+      type: "wordpress",
+      location: "remote",
+      experience: "entry-level",
+      description:
+        "We are seeking a motivated and talented WordPress developer intern to join our team. You will be responsible for creating and updating contents for our content management system(CMS) with along side others.",
     },
   ];
   const filteredJobs = useMemo(() => {
@@ -146,6 +155,9 @@ export default function Careers() {
                 <DropdownMenuRadioItem value="backend">
                   Backend
                 </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="wordpress">
+                  WordPress Developer
+                </DropdownMenuRadioItem>
                 <DropdownMenuRadioItem value="writing">
                   Technical Writing
                 </DropdownMenuRadioItem>
@@ -159,6 +171,9 @@ export default function Careers() {
                 <DropdownMenuRadioItem value="all">All</DropdownMenuRadioItem>
                 <DropdownMenuRadioItem value="new-york">
                   New York
+                </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="lusaka">
+                  Lusaka
                 </DropdownMenuRadioItem>
                 <DropdownMenuRadioItem value="san-francisco">
                   San Francisco
@@ -259,6 +274,41 @@ export default function Careers() {
               ))}
           </div>
         </div>
+
+
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            WordPress Developer
+          </h2>
+          <div className="grid gap-6 md:gap-8">
+            {filteredJobs
+              .filter((job) => job.type === "wordpress")
+              .map((job) => (
+                <Card key={job.id}>
+                  <CardContent>
+                    <div className="mb-4">
+                      <h3 className="text-xl font-bold">{job.title}</h3>
+                      <p className="text-gray-500 dark:text-gray-400">
+                        {job.location} - {job.experience} level
+                      </p>
+                    </div>
+                    <p className="mb-6">{job.description}</p>
+                    <div className="flex justify-end">
+                      <Link
+                        href="mailto:recruit@lupleg.website"
+                        className="inline-flex h-9 items-center justify-center rounded-md bg-[#C24229] px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-[#C24229] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                        prefetch={false}
+                      >
+                        Apply
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+          </div>
+        </div>
+
+
         <div>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Technical Writing
