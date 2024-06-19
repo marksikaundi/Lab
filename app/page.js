@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
-// import Cards from "/components/FeaturesCards/Cards.jsx";
 import ProgramSummary from "@/components/FeaturesCards/ProgramSummary";
 import Link from "next/link";
 
-export default function Component() {
+export default function Home() {
   return (
     <div className="bg-[#FFFFFF]">
       <div className="max-w-6xl mx-auto pt-25 pb-25 px-4 sm:px-6 lg:px-8 py-12 text-center">
@@ -22,11 +21,10 @@ export default function Component() {
           help novice scale up their career in tech.
         </p>
         <Button className="W-15 mt-8 px-8 py-3 text-md bg-[#ED7133] text-white rounded-full p-8 hover:bg-black focus:outline-none focus:ring-2 focus:ring-orange focus:ring-opacity-50 transition duration-300">
-          <Link href="contacts">Get started</Link>
+          <Link href="contact">Get started</Link>
         </Button>
         <br />
         {/* <Cards /> */}
-        
       </div>
       <ProgramSummary />
     </div>

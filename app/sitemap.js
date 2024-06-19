@@ -1,4 +1,4 @@
-export default function sitemap() {
+export default function Sitemap() {
   return [
     {
       url: "https://www.lupleg.website/mentorships",
