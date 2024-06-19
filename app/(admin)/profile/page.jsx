@@ -3,7 +3,7 @@
 import { SignOutButton, useUser } from "@clerk/nextjs";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
-export default function Component() {
+export default function Profile() {
   const { user } = useUser();
 
   console.log(user);

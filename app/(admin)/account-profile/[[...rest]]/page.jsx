@@ -2,7 +2,7 @@
 import { UserButton, SignOutButton, UserProfile } from "@clerk/nextjs";
 import { LuLogOut } from "react-icons/lu";
 
-export default function Component() {
+export default function AccountProfile() {
   return (
     <div className="container mx-auto max-w-4xl py-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-8">

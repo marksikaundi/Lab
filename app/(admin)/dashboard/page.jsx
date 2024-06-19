@@ -21,7 +21,7 @@ import {
   TableCell,
 } from "@/components/ui/table";
 
-export default function Component() {
+export default function Dashboard() {
   const { user } = useUser();
   return (
     <div className="flex flex-col w-full min-h-screen">
