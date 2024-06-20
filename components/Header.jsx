@@ -18,7 +18,7 @@ export default function Header() {
         <nav className="flex space-x-6">
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="about-us"
+            href="https://lupleg.website/about-us"
           >
             About
           </Link>
@@ -30,19 +30,19 @@ export default function Header() {
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="mentorships"
+            href="https://lupleg.website/mentorships"
           >
             Mentorships
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="academy"
+            href="https://lupleg.website/academy"
           >
             Academy
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="podcasts"
+            href="https://lupleg.website/podcasts"
           >
             Podcasts
           </Link>
@@ -66,7 +66,7 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="about-us"
+                href="https://lupleg.website/about-us"
               >
                 About
               </Link>
@@ -82,7 +82,7 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="mentorships"
+                href="https://lupleg.website/mentorships"
               >
                 Mentorships
               </Link>
@@ -90,7 +90,7 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="academy"
+                href="https://lupleg.website/academy"
               >
                 Academy
               </Link>
@@ -98,7 +98,7 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="podcasts"
+                href="https://lupleg.website/podcasts"
               >
                 Podcasts
               </Link>
