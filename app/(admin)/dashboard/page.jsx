@@ -41,7 +41,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
-                  Sign Up
+                  Sign Up →
                 </Button>
               </CardContent>
             </Card>
@@ -52,7 +52,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
-                  Sign Up
+                  Sign Up →
                 </Button>
               </CardContent>
             </Card>
@@ -63,7 +63,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
-                  Sign Up
+                  Sign Up →
                 </Button>
               </CardContent>
             </Card>
