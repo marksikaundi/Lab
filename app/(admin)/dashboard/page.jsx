@@ -19,6 +19,7 @@ import {
   TableBody,
   TableCell,
 } from "@/components/ui/table";
+import Link from "next/link";
 
 export default function Dashboard() {
   const { user } = useUser();
@@ -41,7 +42,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
-                  Sign Up →
+                  <Link href="/#challenge/1">Sign Up →</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -52,7 +53,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
-                  Sign Up →
+                  <Link href="/#challenge/1"> Sign Up →</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -63,7 +64,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
-                  Sign Up →
+                  <Link href="/#challenge/1">Sign Up →</Link>
                 </Button>
               </CardContent>
             </Card>
