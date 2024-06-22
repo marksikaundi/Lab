@@ -24,7 +24,7 @@ export default function Dashboard() {
   const { user } = useUser();
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
+      <header className="bg-black text-white py-4 px-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold">Coding Challenge Dashboard</h1>
         <div className="flex items-center gap-4">
           Hello 👋, {user?.fullName}
@@ -37,7 +37,7 @@ export default function Dashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>Algorithm Challenge</CardTitle>
-                <CardDescription>June 15, 2023</CardDescription>
+                <CardDescription>November 15, 2024</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
@@ -48,7 +48,7 @@ export default function Dashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>Data Structures Challenge</CardTitle>
-                <CardDescription>July 1, 2023</CardDescription>
+                <CardDescription>November 30, 2024</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
@@ -59,7 +59,7 @@ export default function Dashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>Coding Interview Challenge</CardTitle>
-                <CardDescription>August 1, 2023</CardDescription>
+                <CardDescription>December 20, 2024</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="solid" size="sm">
