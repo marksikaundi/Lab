@@ -48,8 +48,9 @@ export default function Header() {
           </Link>
         </nav>
       </div>
+{/* rounded-full   p-2 border-2 border-green-700 */}
 
-      <div className="text-md hidden rounded-full   p-2 border-2 border-green-700  md:block">
+      <div className="text-md hidden   p-2  md:block">
         <UserButton className="m-2 " />
       </div>
 
