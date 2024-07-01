@@ -6,7 +6,21 @@ import { Card, CardHeader, CardContent, CardTitle, CardDescription, CardFooter }
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
-     
+      <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid gap-6 md:grid-cols-2 items-center">
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight">Explore Lupleg's Code Challenges</h1>
+              <p className="mt-4 text-lg text-primary-foreground/80">
+                Discover a world of programming challenges and hone your skills with Lupleg.
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <Button>Join Now</Button>
+            </div>
+          </div>
+        </div>
+      </header>
       <main className="flex-1 bg-background">
         <section className="py-12 md:py-20">
           <div className="container mx-auto max-w-5xl px-4 md:px-6">
