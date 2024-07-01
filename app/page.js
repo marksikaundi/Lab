@@ -1,18 +1,40 @@
+"use client";
+
 import ProgramSummary from "@/components/FeaturesCards/ProgramSummary";
 import Link from "next/link";
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardContent, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { useUser } from "@clerk/clerk-react";
 
-export default function Component() {
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/components/ui/card";
+
+export default function Home() {
+  const { user } = useUser();
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
         <div className="container mx-auto max-w-5xl">
           <div className="grid gap-6 md:grid-cols-2 items-center">
             <div>
-              <h1 className="text-4xl font-bold tracking-tight">Explore Lupleg's Code Challenges</h1>
+              <h1 className="text-xl font-bold mb-10 mt-4 tracking-tight">
+                {" "}
+                Hello 👋, {user?.fullName}{" "}
+              </h1>
+              <h1 className="text-4xl font-bold tracking-tight">
+                {" "}
+                Explore Lupleg's Code Challenges
+              </h1>
+
               <p className="mt-4 text-lg text-primary-foreground/80">
-                Discover a world of programming challenges and hone your skills with Lupleg.
+                Discover a world of programming challenges and hone your skills
+                with Lupleg.
               </p>
             </div>
             <div className="flex justify-end">
@@ -24,9 +46,12 @@ export default function Component() {
       <main className="flex-1 bg-background">
         <section className="py-12 md:py-20">
           <div className="container mx-auto max-w-5xl px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tight">Featured Challenges</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Featured Challenges
+            </h2>
             <p className="mt-4 text-muted-foreground">
-              Explore a variety of coding challenges to test and improve your skills.
+              Explore a variety of coding challenges to test and improve your
+              skills.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <Card>
@@ -35,10 +60,16 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <CardTitle>Algorithmic Thinking</CardTitle>
-                  <CardDescription>Dive into the world of algorithms and problem-solving.</CardDescription>
+                  <CardDescription>
+                    Dive into the world of algorithms and problem-solving.
+                  </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link
+                    href="#"
+                    className="text-primary hover:underline"
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
                 </CardFooter>
@@ -49,10 +80,16 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <CardTitle>Database Challenges</CardTitle>
-                  <CardDescription>Explore the intricacies of database management and querying.</CardDescription>
+                  <CardDescription>
+                    Explore the intricacies of database management and querying.
+                  </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link
+                    href="#"
+                    className="text-primary hover:underline"
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
                 </CardFooter>
@@ -63,10 +100,16 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <CardTitle>Web Development</CardTitle>
-                  <CardDescription>Hone your front-end and back-end web development skills.</CardDescription>
+                  <CardDescription>
+                    Hone your front-end and back-end web development skills.
+                  </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link
+                    href="#"
+                    className="text-primary hover:underline"
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
                 </CardFooter>
@@ -77,10 +120,17 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <CardTitle>Data Structures</CardTitle>
-                  <CardDescription>Explore the fundamental building blocks of efficient algorithms.</CardDescription>
+                  <CardDescription>
+                    Explore the fundamental building blocks of efficient
+                    algorithms.
+                  </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link
+                    href="#"
+                    className="text-primary hover:underline"
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
                 </CardFooter>
@@ -91,10 +141,17 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <CardTitle>System Design</CardTitle>
-                  <CardDescription>Tackle complex system design challenges and optimize performance.</CardDescription>
+                  <CardDescription>
+                    Tackle complex system design challenges and optimize
+                    performance.
+                  </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link
+                    href="#"
+                    className="text-primary hover:underline"
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
                 </CardFooter>
@@ -105,10 +162,17 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <CardTitle>Coding Interviews</CardTitle>
-                  <CardDescription>Prepare for technical interviews with real-world coding challenges.</CardDescription>
+                  <CardDescription>
+                    Prepare for technical interviews with real-world coding
+                    challenges.
+                  </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link
+                    href="#"
+                    className="text-primary hover:underline"
+                    prefetch={false}
+                  >
                     Learn More
                   </Link>
                 </CardFooter>
@@ -119,7 +183,9 @@ export default function Component() {
         <section className="bg-muted py-12 md:py-20">
           <div className="container mx-auto max-w-5xl px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tight">Key Metrics</h2>
-            <p className="mt-4 text-muted-foreground">Discover the impact of our code challenges and programs.</p>
+            <p className="mt-4 text-muted-foreground">
+              Discover the impact of our code challenges and programs.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <Card>
                 <CardContent>
@@ -152,24 +218,33 @@ export default function Component() {
           <div className="container mx-auto max-w-5xl px-4 md:px-6">
             <div className="grid gap-6 md:grid-cols-2 items-center">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight">Ready to Level Up?</h2>
+                <h2 className="text-3xl font-bold tracking-tight">
+                  Ready to Level Up?
+                </h2>
                 <p className="mt-4 text-muted-foreground">
-                  Explore our wide range of code challenges and programs to enhance your programming skills.
+                  Explore our wide range of code challenges and programs to
+                  enhance your programming skills.
                 </p>
                 <div className="mt-6">
                   <Button>Join Now</Button>
                 </div>
               </div>
               <div className="flex justify-end">
-                <img src="/placeholder.svg" width="400" height="300" alt="Coding Illustration" className="rounded-lg" />
+                <img
+                  src="/placeholder.svg"
+                  width="400"
+                  height="300"
+                  alt="Coding Illustration"
+                  className="rounded-lg"
+                />
               </div>
             </div>
           </div>
         </section>
       </main>
-      <ProgramSummary/>
+      <ProgramSummary />
     </div>
-  )
+  );
 }
 
 function CodeIcon(props) {
@@ -189,9 +264,8 @@ function CodeIcon(props) {
       <polyline points="16 18 22 12 16 6" />
       <polyline points="8 6 2 12 8 18" />
     </svg>
-  )
+  );
 }
-
 
 function CpuIcon(props) {
   return (
@@ -218,9 +292,8 @@ function CpuIcon(props) {
       <path d="M9 2v2" />
       <path d="M9 20v2" />
     </svg>
-  )
+  );
 }
-
 
 function DatabaseIcon(props) {
   return (
@@ -240,9 +313,8 @@ function DatabaseIcon(props) {
       <path d="M3 5V19A9 3 0 0 0 21 19V5" />
       <path d="M3 12A9 3 0 0 0 21 12" />
     </svg>
-  )
+  );
 }
-
 
 function WebhookIcon(props) {
   return (
@@ -262,5 +334,5 @@ function WebhookIcon(props) {
       <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06" />
       <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8" />
     </svg>
-  )
+  );
 }

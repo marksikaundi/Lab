@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import Image from "next/image";
-import { useState } from "react";
-import { UserButton } from "@clerk/nextjs";
+import { UserButton, useUser } from "@clerk/nextjs";
 
 export default function Header() {
+  const { user } = useUser();
+
   return (
     <header className="flex flex-wrap items-center justify-between bg-white p-6 dark:bg-gray-800">
       <div className="flex items-center space-x-3">
@@ -48,7 +49,6 @@ export default function Header() {
           </Link>
         </nav>
       </div>
-{/* rounded-full   p-2 border-2 border-green-700 */}
 
       <div className="text-md hidden   p-2  md:block">
         <UserButton className="m-2 " />
