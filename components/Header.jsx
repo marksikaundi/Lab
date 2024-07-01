@@ -16,7 +16,7 @@ export default function Header() {
         </Link>
       </div>
 
- {/* TODO: Add a beta tag, but remove it when the site is out of beta */}
+      {/* TODO: Add a beta tag, but remove it when the site is out of beta */}
       <div className="flex items-center space-x-3 bg-[#0F172A] rounded-md border border-white">
         <Link href="#">
           <h1 className="p-2 text-md font-semibold  text-white dark:text-white">
