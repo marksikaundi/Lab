@@ -9,8 +9,6 @@ export default function AccountProfile() {
         <div>
           <h2 className="text-2xl font-bold mb-4">Account Settings</h2>
           <UserProfile />
-          <SignOutButton />
-          <LuLogOut className="border p-4 m-4 cursor-pointer" />
         </div>
       </div>
     </div>

@@ -19,9 +19,9 @@ export default function Header() {
         <nav className="flex space-x-6">
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="https://lupleg.website/about-us"
+            href="dashboard"
           >
-            About
+            Dashboard
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
@@ -31,21 +31,21 @@ export default function Header() {
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="https://lupleg.website/mentorships"
+            href="challenges"
           >
             Mentorships
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="https://lupleg.website/academy"
+            href="account-profile"
           >
-            Academy
+            account-profile
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="https://lupleg.website/podcasts"
+            href="profile"
           >
-            Podcasts
+            Profile
           </Link>
         </nav>
       </div>
@@ -107,7 +107,7 @@ export default function Header() {
             <div className="w-30 flex   items-center rounded-full">
               <Button className="text-md text-white">
                 <SheetTrigger asChild>
-                  <Link href="profile">Go Profile</Link>
+                  <Link href="account-profile">Go Profile</Link>
                 </SheetTrigger>
               </Button>
             </div>
