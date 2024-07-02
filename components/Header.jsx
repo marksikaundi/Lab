@@ -60,7 +60,7 @@ export default function Header() {
  text-black md:flex"
       >
         <Link
-          href="https://app.lupleg.website/dashboard"
+          href="premium"
           className="rounded border-2 border-green-700 p-3"
         >
           Premium
@@ -133,7 +133,7 @@ export default function Header() {
 "
               >
                 <SheetTrigger asChild>
-                  <Link href="dashboard">Premium</Link>
+                  <Link href="premium">Premium</Link>
                 </SheetTrigger>
               </Button>
             </div>
