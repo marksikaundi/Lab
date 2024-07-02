@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Plan from "@/components/FeaturesCards/Plan";
 import MoreFQA from "@/components/FeaturesCards/MoreFAQ";
 
