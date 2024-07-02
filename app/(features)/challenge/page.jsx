@@ -10,44 +10,7 @@ function Challenge() {
           <span className="text-green-900"> coding </span>skills!
         </h1>
         <div className="relative my-16 text-center z-20">
-          {/* <div className="flex justify-center">
-            <img
-              className="border-[3px] border-green-900 w-12 h-12 rounded-full -mr-3"
-              src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/b31bde00-b6db-48e5-9798-1c0f053360d4.jpg"
-              alt="User 0"
-              loading="lazy"
-            />
-            <img
-              className="border-[3px] border-green-900 w-12 h-12 rounded-full -mr-3"
-              src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/6d9761f7-21fd-49dc-b8d6-f7e17c2b6234.jpg"
-              alt="User 1"
-              loading="lazy"
-            />
-            <img
-              className="border-[3px] border-green-900 w-12 h-12 rounded-full -mr-3"
-              src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/e3d46e56-9490-4720-ae1d-3116a4f1814d.jpeg"
-              alt="User 2"
-              loading="lazy"
-            />
-            <img
-              className="border-[3px] border-green-900 w-12 h-12 rounded-full -mr-3"
-              src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/24749984-7127-4252-938d-d234d7bede05.png"
-              alt="User 3"
-              loading="lazy"
-            />
-            <img
-              className="border-[3px] border-green-900 w-12 h-12 rounded-full -mr-3"
-              src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/e8f8bde3-f8c4-4f3c-b19f-1495128a6c47.png"
-              alt="User 4"
-              loading="lazy"
-            />
-            <img
-              className="border-[3px] border-green-900 w-12 h-12 rounded-full -mr-3"
-              src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/6a0c72d5-756d-457d-ad8a-6e3935dcffbf.jpg"
-              alt="User 5"
-              loading="lazy"
-            />
-          </div> */}
+          
           <p className="text-green-950 text-lg mt-4 mb-8 w-96 max-w-full">
             Join{" "}
             <b>
@@ -58,10 +21,10 @@ function Challenge() {
             </b>
             supercharging their coding skills by building projects.
           </p>
-          <div className="bg-green-800 rounded-lg transition hover:-translate-y-1 w-max mx-auto group cursor-pointer">
-            <div className="animated-border after:opacity-100 before:opacity-100 p-0.5 rounded-lg text-green-900 flex justify-center items-center">
+          <div className="bg-[#C24229] rounded-lg transition hover:-translate-y-1 w-max mx-auto group cursor-pointer">
+            <div className="animated-border after:opacity-100 before:opacity-100 p-0.5 rounded-lg text-white flex justify-center items-center">
               <a
-                className="bg-green-900 text-white text-lg font-bold py-4 px-8 cursor-pointer relative w-full rounded-lg group-hover:bg-green-700 z-10"
+                className="bg-[#C24229] text-white text-lg font-bold py-4 px-8 cursor-pointer relative w-full rounded-lg group-hover:bg-[#C24229] z-10"
                 href="/dashboard"
               >
                 Start coding
@@ -272,7 +235,7 @@ function Challenge() {
           Join the challenge now!
         </h2>
         <a
-          className="inline-block bg-green-900  text-white text-lg font-bold rounded-lg py-4 px-8 cursor-pointer hover:opacity-80"
+          className="inline-block bg-[#C24229]  text-white text-lg font-bold rounded-lg py-4 px-8 cursor-pointer hover:opacity-80"
           href="/dashboard"
         >
           Join challenge
