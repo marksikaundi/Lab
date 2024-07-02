@@ -44,11 +44,11 @@ export default function Plan() {
                 <span>Basic analytics</span>
               </div>
             </div>
-            <Button size="lg" className="mt-4">
+            <Button size="lg" className="bg-green-950 mt-4">
               Get Started
             </Button>
           </Card>
-          <Card className="bg-primary p-6 flex flex-col gap-4 text-primary-foreground">
+          <Card className="bg-green-950 p-6 flex flex-col gap-4 text-primary-foreground">
             <div className="grid gap-2">
               <h3 className="text-2xl font-bold">Pro</h3>
               <p className="text-primary-foreground">
@@ -104,7 +104,7 @@ export default function Plan() {
                 <span>Enterprise-grade analytics</span>
               </div>
             </div>
-            <Button size="lg" className="mt-4">
+            <Button size="lg" className="bg-green-950 mt-4">
               Get Started
             </Button>
           </Card>
