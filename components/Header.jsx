@@ -41,9 +41,9 @@ export default function Header() {
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="challenges"
+            href="roadmap"
           >
-            Mentorships
+            Roadmap
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
@@ -60,9 +60,19 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className="text-md hidden   p-2  md:block">
-        <UserButton className="m-2 " />
+      <div className="hidden items-center justify-start space-x-4 text-m text-black md:flex">
+        <Link
+          href="https://app.lupleg.website/dashboard"
+          className="rounded border-2 border-green-700 p-3"
+        >
+          Join Now
+        </Link>
+        <UserButton className="mr-20" />
       </div>
+
+      {/* <div className="text-md hidden   p-2  md:block">
+       <UserButton className="mr-20 " />
+      </div> */}
 
       {/* mobile view */}
       <Sheet>
@@ -93,9 +103,9 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="https://lupleg.website/mentorships"
+                href="roadmap"
               >
-                Mentorships
+                Roadmap
               </Link>
             </SheetTrigger>
             <SheetTrigger asChild>
@@ -117,7 +127,7 @@ export default function Header() {
             <div className="w-30 flex   items-center rounded-full">
               <Button className="text-md text-white">
                 <SheetTrigger asChild>
-                  <Link href="account-profile">Go Profile</Link>
+                  <Link href="dashboard">Join Now</Link>
                 </SheetTrigger>
               </Button>
             </div>
