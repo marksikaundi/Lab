@@ -1,7 +1,6 @@
-
-import { Card } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 export default function Plan() {
   return (
@@ -13,7 +12,8 @@ export default function Plan() {
               Choose a plan that fits your needs
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our subscription plans offer flexible options to support your business at every stage.
+              Our subscription plans offer flexible options to support your
+              business at every stage.
             </p>
           </div>
         </div>
@@ -21,7 +21,9 @@ export default function Plan() {
           <Card className="bg-background p-6 flex flex-col gap-4">
             <div className="grid gap-2">
               <h3 className="text-2xl font-bold">Starter</h3>
-              <p className="text-muted-foreground">Perfect for small businesses and individuals.</p>
+              <p className="text-muted-foreground">
+                Perfect for small businesses and individuals.
+              </p>
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$9</span>
@@ -49,7 +51,9 @@ export default function Plan() {
           <Card className="bg-primary p-6 flex flex-col gap-4 text-primary-foreground">
             <div className="grid gap-2">
               <h3 className="text-2xl font-bold">Pro</h3>
-              <p className="text-primary-foreground">For growing businesses and teams.</p>
+              <p className="text-primary-foreground">
+                For growing businesses and teams.
+              </p>
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$29</span>
@@ -77,7 +81,9 @@ export default function Plan() {
           <Card className="bg-background p-6 flex flex-col gap-4">
             <div className="grid gap-2">
               <h3 className="text-2xl font-bold">Enterprise</h3>
-              <p className="text-muted-foreground">For large businesses and organizations.</p>
+              <p className="text-muted-foreground">
+                For large businesses and organizations.
+              </p>
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$99</span>
@@ -105,7 +111,7 @@ export default function Plan() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function CheckIcon(props) {
@@ -124,5 +130,5 @@ function CheckIcon(props) {
     >
       <path d="M20 6 9 17l-5-5" />
     </svg>
-  )
+  );
 }
