@@ -2,13 +2,14 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import podcasts from "@/app/constants/podcasts";
 
 export default function Component() {
   return (
     <div className="w-full">
-      <section className="w-full bg-gray-950 py-12 md:py-20 lg:py-28">
-        <div className="container grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
-          <div className="flex flex-col items-start justify-center space-y-6">
+      <section className="w-full bg-podcast-bg bg-cover h-full lg:h-[100vh]">
+        <div className="container grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16 w-full h-full bg-slate-800 bg-opacity-60">
+          <div className="flex flex-col items-start justify-center space-y-6 py-8 lg:py-0">
             <h1 className="text-3xl font-bold tracking-tighter text-gray-50 sm:text-4xl md:text-5xl lg:text-6xl">
               Tech Hack Africa
             </h1>
@@ -17,7 +18,7 @@ export default function Component() {
               the tech industry with our informative and engaging podcast.
             </p>
             <div className="flex items-center gap-4">
-              <Button size="lg" className="w-full max-w-[200px] md:w-auto">
+              <Button size="lg" className="w-full max-w-[200px] md:w-auto bg-[#C24229]">
                 Subscribe
               </Button>
               <Link
@@ -46,33 +47,33 @@ export default function Component() {
               </Link>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden rounded-xl md:h-[400px]">
+          {/* <div className="relative h-[300px] overflow-hidden rounded-xl md:h-[400px]">
             <img
               src="/placeholder.svg"
               alt="Podcast Cover Art"
               fill
               className="object-cover"
             />
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="w-full py-12 md:py-20 lg:py-28">
         <div className="container grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-12">
-          {[...Array(6)].map((_, index) => (
+          {podcasts.map((podcast, index) => (
             <Card key={index} className="group">
               <div className="relative h-[200px] overflow-hidden rounded-xl">
                 <img
-                  src="/placeholder.svg"
+                  src={podcast.image}
                   alt={`Episode ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardContent className="flex flex-col gap-2">
-                <h3 className="text-lg font-bold line-clamp-2">
-                  Episode {index + 1}: The Future of AI in Tech
+                <h3 className="text-lg font-bold line-clamp-2 pt-3">
+                  Episode {index + 1}: {podcast.title}
                 </h3>
-                <div className="text-gray-500 dark:text-gray-400">45 min</div>
+                <div className="text-gray-500 dark:text-gray-400">{podcast.duration}</div>
               </CardContent>
             </Card>
           ))}
@@ -84,14 +85,18 @@ export default function Component() {
             <h2 className="text-2xl font-bold mb-4">About the Host</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div className="flex items-start gap-4">
-                <div className="rounded-full w-16 h-16 bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl">
+                <div className="rounded-full w-16 h-16 bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl ">
                   🎙️
                 </div>
-                <div>
+                <div className="flex flex-col space-y-2 justify-start">
                   <h3 className="text-lg font-bold">Mark Sikaundi</h3>
                   <p className="text-gray-500 dark:text-gray-400">
                     Tech Enthusiast and Podcast Host
                   </p>
+                  <div className="relative h-[150px] overflow-hidden rounded-xl w-[255px]">
+                  <img src="https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9kY2FzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Mark Profile Picture" />
+                  </div>
+
                 </div>
               </div>
               <div className="flex flex-col gap-2">
