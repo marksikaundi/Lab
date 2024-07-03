@@ -1,26 +1,24 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/ecdIAOmUvpP
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-import Link from "next/link"
+import Link from "next/link";
 
-export default function Component() {
+export default function Dashboard() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12 xl:gap-20">
             <div className="space-y-4">
-              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">New Course</div>
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                New Course
+              </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none">
                 Mastering React: A Comprehensive Course
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Dive deep into the world of React, the popular JavaScript library for building user interfaces. This
-                course covers everything from the fundamentals to advanced concepts, equipping you with the skills to
-                create dynamic and responsive web applications.
+                Dive deep into the world of React, the popular JavaScript
+                library for building user interfaces. This course covers
+                everything from the fundamentals to advanced concepts, equipping
+                you with the skills to create dynamic and responsive web
+                applications.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
@@ -52,12 +50,17 @@ export default function Component() {
           <div className="container grid gap-12 px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Course Curriculum</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What You'll Learn</h2>
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                  Course Curriculum
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  What You'll Learn
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  This comprehensive course covers a wide range of topics, from the fundamentals of React to advanced
-                  concepts and best practices. You'll gain a deep understanding of the library and be able to build
-                  complex, production-ready applications.
+                  This comprehensive course covers a wide range of topics, from
+                  the fundamentals of React to advanced concepts and best
+                  practices. You'll gain a deep understanding of the library and
+                  be able to build complex, production-ready applications.
                 </p>
               </div>
             </div>
@@ -65,37 +68,43 @@ export default function Component() {
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">React Fundamentals</h3>
                 <p className="text-muted-foreground">
-                  Learn the core concepts of React, including components, state, and props.
+                  Learn the core concepts of React, including components, state,
+                  and props.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Advanced React Concepts</h3>
                 <p className="text-muted-foreground">
-                  Dive into more advanced topics like hooks, context, and performance optimization.
+                  Dive into more advanced topics like hooks, context, and
+                  performance optimization.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">React Ecosystem</h3>
                 <p className="text-muted-foreground">
-                  Explore the wider React ecosystem, including popular libraries and tools.
+                  Explore the wider React ecosystem, including popular libraries
+                  and tools.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Project-based Learning</h3>
                 <p className="text-muted-foreground">
-                  Apply your knowledge by building real-world projects and applications.
+                  Apply your knowledge by building real-world projects and
+                  applications.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Best Practices</h3>
                 <p className="text-muted-foreground">
-                  Learn industry-standard best practices for writing clean, maintainable React code.
+                  Learn industry-standard best practices for writing clean,
+                  maintainable React code.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Deployment and Hosting</h3>
                 <p className="text-muted-foreground">
-                  Understand how to deploy your React applications to various hosting platforms.
+                  Understand how to deploy your React applications to various
+                  hosting platforms.
                 </p>
               </div>
             </div>
@@ -105,8 +114,12 @@ export default function Component() {
           <div className="container grid gap-12 px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About the Course</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Learning Objectives</h2>
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                  About the Course
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Learning Objectives
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   By the end of this course, you'll be able to:
                 </p>
@@ -114,39 +127,51 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Understand React Fundamentals</h3>
+                <h3 className="text-lg font-bold">
+                  Understand React Fundamentals
+                </h3>
                 <p className="text-muted-foreground">
-                  Gain a solid understanding of React's core concepts, including components, state, and props.
+                  Gain a solid understanding of React's core concepts, including
+                  components, state, and props.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Build Complex Applications</h3>
+                <h3 className="text-lg font-bold">
+                  Build Complex Applications
+                </h3>
                 <p className="text-muted-foreground">
-                  Learn how to build complex, production-ready web applications using React.
+                  Learn how to build complex, production-ready web applications
+                  using React.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Optimize Performance</h3>
                 <p className="text-muted-foreground">
-                  Understand best practices for optimizing the performance of your React applications.
+                  Understand best practices for optimizing the performance of
+                  your React applications.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Integrate with APIs</h3>
                 <p className="text-muted-foreground">
-                  Learn how to integrate your React applications with various APIs and data sources.
+                  Learn how to integrate your React applications with various
+                  APIs and data sources.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Deploy and Host Applications</h3>
+                <h3 className="text-lg font-bold">
+                  Deploy and Host Applications
+                </h3>
                 <p className="text-muted-foreground">
-                  Understand how to deploy your React applications to different hosting platforms.
+                  Understand how to deploy your React applications to different
+                  hosting platforms.
                 </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Become a React Expert</h3>
                 <p className="text-muted-foreground">
-                  Gain the skills and knowledge to become a proficient React developer.
+                  Gain the skills and knowledge to become a proficient React
+                  developer.
                 </p>
               </div>
             </div>
@@ -156,12 +181,17 @@ export default function Component() {
           <div className="container grid gap-12 px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About the Instructor</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet Your Instructor</h2>
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                  About the Instructor
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Meet Your Instructor
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  This course is taught by Mark Sikaundi, a seasoned software engineer with over 10 years of experience in
-                  the industry. John is passionate about teaching and has helped countless students become proficient in
-                  React.
+                  This course is taught by Mark Sikaundi, a seasoned software
+                  engineer with over 10 years of experience in the industry.
+                  John is passionate about teaching and has helped countless
+                  students become proficient in React.
                 </p>
               </div>
             </div>
@@ -175,23 +205,34 @@ export default function Component() {
               />
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Mark Sikaundi</h3>
-                <p className="text-muted-foreground">Senior Software Engineer</p>
-                <p className="text-muted-foreground">10+ years of experience in the industry</p>
-                <p className="text-muted-foreground">Passionate about teaching and mentoring</p>
+                <p className="text-muted-foreground">
+                  Senior Software Engineer
+                </p>
+                <p className="text-muted-foreground">
+                  10+ years of experience in the industry
+                </p>
+                <p className="text-muted-foreground">
+                  Passionate about teaching and mentoring
+                </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Expertise</h3>
-                <p className="text-muted-foreground">React, JavaScript, Node.js, AWS, DevOps</p>
-                <p className="text-muted-foreground">Proven track record of building scalable web applications</p>
-                <p className="text-muted-foreground">Regularly speaks at industry conferences and meetups</p>
+                <p className="text-muted-foreground">
+                  React, JavaScript, Node.js, AWS, DevOps
+                </p>
+                <p className="text-muted-foreground">
+                  Proven track record of building scalable web applications
+                </p>
+                <p className="text-muted-foreground">
+                  Regularly speaks at industry conferences and meetups
+                </p>
               </div>
             </div>
           </div>
         </section>
       </main>
-      
     </div>
-  )
+  );
 }
 
 function MountainIcon(props) {
@@ -210,5 +251,5 @@ function MountainIcon(props) {
     >
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
-  )
+  );
 }
