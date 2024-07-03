@@ -57,11 +57,11 @@ export default function Header() {
 
       <div
         className="hidden items-center justify-start  space-x-4 text-m font-semibold
- text-black md:flex"
+ text-white md:flex"
       >
         <Link
           href="premium"
-          className="rounded bg-green-950 border-2 border-green-700 p-3"
+          className="rounded bg-green-950 border-2 border-green-950 p-3"
         >
           Premium
         </Link>
