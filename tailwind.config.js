@@ -52,6 +52,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        "podcast-bg": "url('https://media.istockphoto.com/id/1657153873/photo/background-with-a-professional-microphone.webp?b=1&s=170667a&w=0&k=20&c=UYAwE0CwcAp4dYom58AkVISNavXjf_3DNgwHuL71Nxs=')",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
