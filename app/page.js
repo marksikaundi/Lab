@@ -1,253 +1,200 @@
-"use client";
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/ecdIAOmUvpP
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+import Link from "next/link"
 
-import ProgramSummary from "@/components/FeaturesCards/ProgramSummary";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { useUser } from "@clerk/clerk-react";
-
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardTitle,
-  CardDescription,
-  CardFooter,
-} from "@/components/ui/card";
-
-export default function Home() {
-  const { user } = useUser();
-
+export default function Component() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid gap-6 md:grid-cols-2 items-center">
-            <div>
-              <h1 className="text-xl font-bold mb-10 mt-4 tracking-tight">
-                {" "}
-                Hello 👋, {user?.fullName}{" "}
+    <div className="flex flex-col min-h-[100dvh]">
+      
+      <main className="flex-1">
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12 xl:gap-20">
+            <div className="space-y-4">
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">New Course</div>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none">
+                Mastering React: A Comprehensive Course
               </h1>
-              <h1 className="text-4xl font-bold tracking-tight">
-                {" "}
-                Explore Lupleg's Code Challenges
-              </h1>
-
-              <p className="mt-4 text-lg text-primary-foreground/80">
-                Discover a world of programming challenges and hone your skills
-                with Lupleg.
+              <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                Dive deep into the world of React, the popular JavaScript library for building user interfaces. This
+                course covers everything from the fundamentals to advanced concepts, equipping you with the skills to
+                create dynamic and responsive web applications.
               </p>
-            </div>
-            <div className="flex justify-end">
-              <Button>Join Now</Button>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main className="flex-1 bg-background">
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto max-w-5xl px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tight">
-              Featured Challenges
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Explore a variety of coding challenges to test and improve your
-              skills.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-              <Card>
-                <CardHeader>
-                  <CodeIcon className="w-8 h-8 text-primary" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>Algorithmic Thinking</CardTitle>
-                  <CardDescription>
-                    Dive into the world of algorithms and problem-solving.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <DatabaseIcon className="w-8 h-8 text-primary" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>Database Challenges</CardTitle>
-                  <CardDescription>
-                    Explore the intricacies of database management and querying.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <WebhookIcon className="w-8 h-8 text-primary" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>Web Development</CardTitle>
-                  <CardDescription>
-                    Hone your front-end and back-end web development skills.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CodeIcon className="w-8 h-8 text-primary" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>Data Structures</CardTitle>
-                  <CardDescription>
-                    Explore the fundamental building blocks of efficient
-                    algorithms.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CpuIcon className="w-8 h-8 text-primary" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>System Design</CardTitle>
-                  <CardDescription>
-                    Tackle complex system design challenges and optimize
-                    performance.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CodeIcon className="w-8 h-8 text-primary" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle>Coding Interviews</CardTitle>
-                  <CardDescription>
-                    Prepare for technical interviews with real-world coding
-                    challenges.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-            </div>
-          </div>
-        </section>
-        <section className="bg-muted py-12 md:py-20">
-          <div className="container mx-auto max-w-5xl px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tight">Key Metrics</h2>
-            <p className="mt-4 text-muted-foreground">
-              Discover the impact of our code challenges and programs.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-              <Card>
-                <CardContent>
-                  <div className="text-4xl font-bold">10,000+</div>
-                  <div className="text-muted-foreground">Participants</div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent>
-                  <div className="text-4xl font-bold">85%</div>
-                  <div className="text-muted-foreground">Completion Rate</div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent>
-                  <div className="text-4xl font-bold">500+</div>
-                  <div className="text-muted-foreground">Challenges</div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent>
-                  <div className="text-4xl font-bold">100+</div>
-                  <div className="text-muted-foreground">Topics Covered</div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto max-w-5xl px-4 md:px-6">
-            <div className="grid gap-6 md:grid-cols-2 items-center">
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight">
-                  Ready to Level Up?
-                </h2>
-                <p className="mt-4 text-muted-foreground">
-                  Explore our wide range of code challenges and programs to
-                  enhance your programming skills.
-                </p>
-                <div className="mt-6">
-                  <Button>Join Now</Button>
-                </div>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link
+                  href="#"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  prefetch={false}
+                >
+                  Enroll Now
+                </Link>
+                <Link
+                  href="courses"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  prefetch={false}
+                >
+                  Learn More
+                </Link>
               </div>
-              <div className="flex justify-end">
-                <img
-                  src="/placeholder.svg"
-                  width="400"
-                  height="300"
-                  alt="Coding Illustration"
-                  className="rounded-lg"
-                />
+            </div>
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="550"
+              alt="Course Hero"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+            />
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+          <div className="container grid gap-12 px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Course Curriculum</div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What You'll Learn</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  This comprehensive course covers a wide range of topics, from the fundamentals of React to advanced
+                  concepts and best practices. You'll gain a deep understanding of the library and be able to build
+                  complex, production-ready applications.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">React Fundamentals</h3>
+                <p className="text-muted-foreground">
+                  Learn the core concepts of React, including components, state, and props.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Advanced React Concepts</h3>
+                <p className="text-muted-foreground">
+                  Dive into more advanced topics like hooks, context, and performance optimization.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">React Ecosystem</h3>
+                <p className="text-muted-foreground">
+                  Explore the wider React ecosystem, including popular libraries and tools.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Project-based Learning</h3>
+                <p className="text-muted-foreground">
+                  Apply your knowledge by building real-world projects and applications.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Best Practices</h3>
+                <p className="text-muted-foreground">
+                  Learn industry-standard best practices for writing clean, maintainable React code.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Deployment and Hosting</h3>
+                <p className="text-muted-foreground">
+                  Understand how to deploy your React applications to various hosting platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container grid gap-12 px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About the Course</div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Learning Objectives</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  By the end of this course, you'll be able to:
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Understand React Fundamentals</h3>
+                <p className="text-muted-foreground">
+                  Gain a solid understanding of React's core concepts, including components, state, and props.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Build Complex Applications</h3>
+                <p className="text-muted-foreground">
+                  Learn how to build complex, production-ready web applications using React.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Optimize Performance</h3>
+                <p className="text-muted-foreground">
+                  Understand best practices for optimizing the performance of your React applications.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Integrate with APIs</h3>
+                <p className="text-muted-foreground">
+                  Learn how to integrate your React applications with various APIs and data sources.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Deploy and Host Applications</h3>
+                <p className="text-muted-foreground">
+                  Understand how to deploy your React applications to different hosting platforms.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Become a React Expert</h3>
+                <p className="text-muted-foreground">
+                  Gain the skills and knowledge to become a proficient React developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+          <div className="container grid gap-12 px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About the Instructor</div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet Your Instructor</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  This course is taught by Mark Sikaundi, a seasoned software engineer with over 10 years of experience in
+                  the industry. John is passionate about teaching and has helped countless students become proficient in
+                  React.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-center gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+              <img
+                src="/placeholder.svg"
+                width="300"
+                height="300"
+                alt="Instructor"
+                className="mx-auto aspect-square overflow-hidden rounded-full object-cover sm:w-full"
+              />
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Mark Sikaundi</h3>
+                <p className="text-muted-foreground">Senior Software Engineer</p>
+                <p className="text-muted-foreground">10+ years of experience in the industry</p>
+                <p className="text-muted-foreground">Passionate about teaching and mentoring</p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold">Expertise</h3>
+                <p className="text-muted-foreground">React, JavaScript, Node.js, AWS, DevOps</p>
+                <p className="text-muted-foreground">Proven track record of building scalable web applications</p>
+                <p className="text-muted-foreground">Regularly speaks at industry conferences and meetups</p>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <ProgramSummary />
+      
     </div>
-  );
+  )
 }
 
-function CodeIcon(props) {
+function MountainIcon(props) {
   return (
     <svg
       {...props}
@@ -261,78 +208,7 @@ function CodeIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <polyline points="16 18 22 12 16 6" />
-      <polyline points="8 6 2 12 8 18" />
+      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
-  );
-}
-
-function CpuIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="16" height="16" x="4" y="4" rx="2" />
-      <rect width="6" height="6" x="9" y="9" rx="1" />
-      <path d="M15 2v2" />
-      <path d="M15 20v2" />
-      <path d="M2 15h2" />
-      <path d="M2 9h2" />
-      <path d="M20 15h2" />
-      <path d="M20 9h2" />
-      <path d="M9 2v2" />
-      <path d="M9 20v2" />
-    </svg>
-  );
-}
-
-function DatabaseIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <ellipse cx="12" cy="5" rx="9" ry="3" />
-      <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-      <path d="M3 12A9 3 0 0 0 21 12" />
-    </svg>
-  );
-}
-
-function WebhookIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2" />
-      <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06" />
-      <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8" />
-    </svg>
-  );
+  )
 }
