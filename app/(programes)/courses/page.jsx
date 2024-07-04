@@ -5,7 +5,7 @@ export default function Courses() {
   return (
     <div className="mb-20">
       <div className="flex justify-center my-10">
-        <h2 className="text-2xl font-bold">Our Courses</h2>
+        <h2 className="text-2xl font-bold font-mono">Short Courses →</h2>
       </div>
       <p className="text-center text-xl px-20 my-10">
         Interactive, hands-on learning experience that's as fun as it is
@@ -36,7 +36,11 @@ export default function Courses() {
           </div>
         </div>
         <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-          <Link href="/react-basics" className="absolute inset-0 z-10" prefetch={false}>
+          <Link
+            href="/react-basics"
+            className="absolute inset-0 z-10"
+            prefetch={false}
+          >
             <span className="sr-only">View Course</span>
           </Link>
           <img
@@ -58,7 +62,11 @@ export default function Courses() {
           </div>
         </div>
         <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-          <Link href="/data-structure-and-algorithms" className="absolute inset-0 z-10" prefetch={false}>
+          <Link
+            href="/data-structure-and-algorithms"
+            className="absolute inset-0 z-10"
+            prefetch={false}
+          >
             <span className="sr-only">View Course</span>
           </Link>
           <img
