@@ -7,7 +7,7 @@ export default function Courses() {
       <div className="flex justify-center my-10">
         <h2 className="text-2xl font-bold">Our Courses</h2>
       </div>
-      <p className="text-center text-xl px-20">
+      <p className="text-center text-xl px-20 my-10">
         Interactive, hands-on learning experience that's as fun as it is
         educational! These paths are all about practicing the concepts, making
         learning engaging, and guiding you toward mastering specific topics.
@@ -18,8 +18,8 @@ export default function Courses() {
             <span className="sr-only">View Course</span>
           </Link>
           <img
-            src="/placeholder.svg"
-            alt="Course 1"
+            src="https://utfs.io/f/a34c3795-e28b-474b-8188-ca2e305d2aa6-pvcnbw.jpg"
+            alt="Web Development Fundamentals"
             width={500}
             height={300}
             className="object-cover w-full h-48"
@@ -40,8 +40,8 @@ export default function Courses() {
             <span className="sr-only">View Course</span>
           </Link>
           <img
-            src="/placeholder.svg"
-            alt="Course 2"
+            src="https://utfs.io/f/1061b5aa-16f5-4812-8b0e-3f9e6921e33b-8pkox5.jpg"
+            alt="React Basics"
             width={500}
             height={300}
             className="object-cover w-full h-48"
@@ -62,8 +62,8 @@ export default function Courses() {
             <span className="sr-only">View Course</span>
           </Link>
           <img
-            src="/placeholder.svg"
-            alt="Course 3"
+            src="https://utfs.io/f/6ae9c76a-d44e-4299-9236-7f556d068910-yckjbb.jpg"
+            alt="Data Structures and Algorithms"
             width={500}
             height={300}
             className="object-cover w-full h-48"
