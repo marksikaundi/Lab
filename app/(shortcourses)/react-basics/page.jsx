@@ -1,10 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// TODO: Improve font sizes at Course Curriculum section, About the Course section and a missing image at top part of the course
 
-
-export default function Dashboard() {
+export default function ReactBasics() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
@@ -201,7 +199,7 @@ export default function Dashboard() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src="https://utfs.io/f/ff7c57f5-a1b0-4c0c-afde-390ecdf9c87e-6uzm02.jpg"
                 width="300"
                 height="300"
                 alt="Instructor"
