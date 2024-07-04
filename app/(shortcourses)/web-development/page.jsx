@@ -12,14 +12,13 @@ export default function ReactBasics() {
                 New Course
               </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none">
-                Mastering React: A Comprehensive Course
+                Web Development Fundamentals
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Dive deep into the world of React, the popular JavaScript
-                library for building user interfaces. This course covers
-                everything from the fundamentals to advanced concepts, equipping
-                you with the skills to create dynamic and responsive web
-                applications.
+                Learn the basics of HTML, CSS, and JavaScript to build modern
+                Websites in this comprehensive course. You'll gain a deep
+                understanding of the core concepts and be able to build complex,
+                production-ready Websites.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
@@ -58,33 +57,31 @@ export default function ReactBasics() {
                   What You'll Learn
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl sm:text-lg">
-                  This comprehensive course covers a wide range of topics, from
-                  the fundamentals of React to advanced concepts and best
-                  practices. You'll gain a deep understanding of the library and
-                  be able to build complex, production-ready applications.
+                  This course covers everything you need to know to become a web
+                  developer. Here are some of the key topics you'll learn:
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
               <div className="grid gap-1">
-                <h3 className="text-xl font-bold">React Fundamentals</h3>
+                <h3 className="text-xl font-bold">Web Fundamentals</h3>
                 <p className="text-muted-foreground text-lg">
-                  Learn the core concepts of React, including components, state,
-                  and props.
+                  Learn the basics of HTML, CSS, and JavaScript to build modern
+                  Websites.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-xl font-bold">Advanced React Concepts</h3>
+                <h3 className="text-xl font-bold">Advanced Web Concepts</h3>
                 <p className="text-muted-foreground text-lg">
-                  Dive into more advanced topics like hooks, context, and
-                  performance optimization.
+                  Dive deeper into advanced web concepts like responsive design
+                  and accessibility.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-xl font-bold">React Ecosystem</h3>
+                <h3 className="text-xl font-bold">Web Ecosystem</h3>
                 <p className="text-muted-foreground text-lg">
-                  Explore the wider React ecosystem, including popular libraries
-                  and tools.
+                  Learn about the web ecosystem and how to work with various
+                  tools and technologies.
                 </p>
               </div>
               <div className="grid gap-1">
@@ -96,16 +93,13 @@ export default function ReactBasics() {
               </div>
               <div className="grid gap-1">
                 <h3 className="text-xl font-bold">Best Practices</h3>
-                <p className="text-muted-foreground text-xl">
-                  Learn industry-standard best practices for writing clean,
-                  maintainable React code.
-                </p>
+                <p className="text-muted-foreground text-xl"></p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-xl font-bold">Deployment and Hosting</h3>
                 <p className="text-muted-foreground text-lg">
-                  Understand how to deploy your React applications to various
-                  hosting platforms.
+                  Understand how to deploy your Websites to various hosting
+                  platforms.
                 </p>
               </div>
             </div>
@@ -131,7 +125,10 @@ export default function ReactBasics() {
                 <h3 className="text-xl font-bold">
                   Web development Fundamentals
                 </h3>
-                <p className="text-muted-foreground text-lg"></p>
+                <p className="text-muted-foreground text-lg">
+                  Learn the basics of HTML, CSS, and JavaScript to build modern
+                  Websites.
+                </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-xl font-bold">Build Complex Websites</h3>
