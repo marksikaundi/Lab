@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import podcasts from "@/app/constants/podcasts";
 
-export default function Component() {
+export default function Podcasts() {
   return (
     <div className="w-full">
       <section className="w-full bg-podcast-bg bg-cover h-full lg:h-[100vh]">
@@ -22,7 +22,7 @@ export default function Component() {
                 Subscribe
               </Button>
               <Link
-                href="#"
+                href="https://youtube.com/@Lupleg"
                 className="text-gray-400 hover:text-gray-50 transition-colors"
                 prefetch={false}
               >
@@ -30,7 +30,7 @@ export default function Component() {
                 <span className="sr-only">Subscribe on YouTube</span>
               </Link>
               <Link
-                href="#"
+                href="https://open.spotify.com/show/24kARiE1lvC1b6GN4AXPmh"
                 className="text-gray-400 hover:text-gray-50 transition-colors"
                 prefetch={false}
               >
@@ -38,7 +38,7 @@ export default function Component() {
                 <span className="sr-only">Subscribe on Spotify</span>
               </Link>
               <Link
-                href="#"
+                href="https://podcasts.apple.com/ng/podcast/tech-hacks-in-africa/id1731008771"
                 className="text-gray-400 hover:text-gray-50 transition-colors"
                 prefetch={false}
               >
@@ -47,6 +47,7 @@ export default function Component() {
               </Link>
             </div>
           </div>
+          {/* TODO: Incase of new plan */}
           {/* <div className="relative h-[300px] overflow-hidden rounded-xl md:h-[400px]">
             <img
               src="/placeholder.svg"
