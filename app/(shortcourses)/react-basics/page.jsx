@@ -39,7 +39,7 @@ export default function ReactBasics() {
                 </Link>
               </div>
             </div>
-            <Image
+            <img
               src="https://utfs.io/f/1061b5aa-16f5-4812-8b0e-3f9e6921e33b-8pkox5.jpg"
               width="100"
               height="100"
