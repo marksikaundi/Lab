@@ -190,9 +190,9 @@ export default function ReactBasics() {
                   Meet Your Instructor
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  This course is taught by Mark Sikaundi, a seasoned software
-                  engineer with over 10 years of experience in the industry.
-                  John is passionate about teaching and has helped countless
+                  This course is taught by Mark Sikaundi, a fulltime Software
+                  Engineer with over 10 years of experience in the industry.
+                  Mark is passionate about teaching and has helped countless
                   students become proficient in React.
                 </p>
               </div>
@@ -220,7 +220,7 @@ export default function ReactBasics() {
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Expertise</h3>
                 <p className="text-muted-foreground">
-                  React, JavaScript, Node.js, AWS, DevOps
+                Python, JavaScript, React, Node.js, AWS, DevOps
                 </p>
                 <p className="text-muted-foreground">
                   Proven track record of building scalable web applications
