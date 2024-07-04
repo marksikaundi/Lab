@@ -38,10 +38,10 @@ export default function ReactBasics() {
               </div>
             </div>
             <img
-              src="https://utfs.io/f/1061b5aa-16f5-4812-8b0e-3f9e6921e33b-8pkox5.jpg"
+              src="https://utfs.io/f/a34c3795-e28b-474b-8188-ca2e305d2aa6-pvcnbw.jpg"
               width="100"
               height="100"
-              alt="React Basics"
+              alt="Web Development Fundamentals"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square h-[400px] mt-10"
             />
           </div>
