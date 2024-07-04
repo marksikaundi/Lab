@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function ReactBasics() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -220,7 +219,7 @@ export default function ReactBasics() {
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Expertise</h3>
                 <p className="text-muted-foreground">
-                Python, JavaScript, React, Node.js, AWS, DevOps
+                  Python, JavaScript, React, Node.js, MongoDB, AWS, DevOps
                 </p>
                 <p className="text-muted-foreground">
                   Proven track record of building scalable web applications

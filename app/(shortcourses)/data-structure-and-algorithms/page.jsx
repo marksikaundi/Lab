@@ -221,7 +221,7 @@ export default function DataStructure() {
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Expertise</h3>
                 <p className="text-muted-foreground">
-                Python, JavaScript, React, Node.js, AWS, DevOps
+                  Python, JavaScript, React, Node.js, MongoDB, AWS, DevOps
                 </p>
                 <p className="text-muted-foreground">
                   Proven track record of building scalable web applications
@@ -237,4 +237,3 @@ export default function DataStructure() {
     </div>
   );
 }
-
