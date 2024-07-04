@@ -93,7 +93,10 @@ export default function ReactBasics() {
               </div>
               <div className="grid gap-1">
                 <h3 className="text-xl font-bold">Best Practices</h3>
-                <p className="text-muted-foreground text-xl"></p>
+                <p className="text-muted-foreground text-xl">
+                  Learn best practices for building modern Websites and web
+                  apps.
+                </p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-xl font-bold">Deployment and Hosting</h3>
