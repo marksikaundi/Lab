@@ -42,10 +42,10 @@ export default function Dashboard() {
               </div>
             </div>
             <Image
-              src="/react-course.jpg"
+              src="https://utfs.io/f/1061b5aa-16f5-4812-8b0e-3f9e6921e33b-8pkox5.jpg"
               width="100"
               height="100"
-              alt="Course Hero"
+              alt="React Basics"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square h-[400px] mt-10"
             />
           </div>
