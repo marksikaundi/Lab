@@ -36,7 +36,7 @@ export default function Courses() {
           </div>
         </div>
         <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+          <Link href="/react-basics" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View Course</span>
           </Link>
           <img
@@ -58,7 +58,7 @@ export default function Courses() {
           </div>
         </div>
         <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+          <Link href="/data-structure-and-algorithms" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View Course</span>
           </Link>
           <img
