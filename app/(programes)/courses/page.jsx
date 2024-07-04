@@ -14,7 +14,11 @@ export default function Courses() {
       </p>
       <section className="grid grid-cols-1 gap-6 p-4 md:grid-cols-3 md:p-6">
         <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+          <Link
+            href="/web-development"
+            className="absolute inset-0 z-10"
+            prefetch={false}
+          >
             <span className="sr-only">View Course</span>
           </Link>
           <img
@@ -27,8 +31,8 @@ export default function Courses() {
           <div className="p-4 bg-background">
             <h3 className="text-xl font-bold">Web Development Fundamentals</h3>
             <p className="text-sm text-muted-foreground">
-              Learn the basics of HTML, CSS, and JavaScript to build modern web
-              applications.
+              Learn the basics of HTML, CSS, and JavaScript to build modern
+              Websites
             </p>
             <Button size="sm" className="mt-4">
               View Course
