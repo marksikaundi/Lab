@@ -94,7 +94,7 @@ export default function Component() {
                     Tech Enthusiast and Podcast Host
                   </p>
                   <div className="relative h-[150px] overflow-hidden rounded-xl w-[255px]">
-                  <img src="https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9kY2FzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Mark Profile Picture" />
+                  <img src="https://utfs.io/f/ff7c57f5-a1b0-4c0c-afde-390ecdf9c87e-6uzm02.jpg" alt="Mark Profile Picture" />
                   </div>
 
                 </div>
