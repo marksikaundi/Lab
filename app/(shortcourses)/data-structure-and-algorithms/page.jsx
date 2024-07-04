@@ -191,8 +191,8 @@ export default function DataStructure() {
                   Meet Your Instructor
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  This course is taught by Mark Sikaundi, a fulltime software
-                  engineer with over 10 years of experience in the industry.
+                  This course is taught by Mark Sikaundi, a fulltime Software
+                  Engineer with over 10 years of experience in the industry.
                   Mark is passionate about teaching and has helped countless
                   students become proficient in Data structure & algorithms.
                 </p>
