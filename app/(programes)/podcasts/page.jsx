@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import podcasts from "@/app/constants/podcasts";
+import podcasts from "@/constants/podcasts";
 
 export default function Podcasts() {
   return (
