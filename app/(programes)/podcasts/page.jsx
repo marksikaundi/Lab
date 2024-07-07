@@ -18,7 +18,10 @@ export default function Podcasts() {
               the tech industry with our informative and engaging podcast.
             </p>
             <div className="flex items-center gap-4">
-              <Button size="lg" className="w-full max-w-[200px] md:w-auto bg-[#C24229]">
+              <Button
+                size="lg"
+                className="w-full max-w-[200px] md:w-auto bg-[#C24229]"
+              >
                 Subscribe
               </Button>
               <Link
@@ -74,7 +77,9 @@ export default function Podcasts() {
                 <h3 className="text-lg font-bold line-clamp-2 pt-3">
                   Episode {index + 1}: {podcast.title}
                 </h3>
-                <div className="text-gray-500 dark:text-gray-400">{podcast.duration}</div>
+                <div className="text-gray-500 dark:text-gray-400">
+                  {podcast.duration}
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -95,9 +100,11 @@ export default function Podcasts() {
                     Tech Enthusiast and Podcast Host
                   </p>
                   <div className="relative h-[150px] overflow-hidden rounded-xl w-[255px]">
-                  <img src="https://utfs.io/f/ff7c57f5-a1b0-4c0c-afde-390ecdf9c87e-6uzm02.jpg" alt="Mark Profile Picture" />
+                    <img
+                      src="https://utfs.io/f/ff7c57f5-a1b0-4c0c-afde-390ecdf9c87e-6uzm02.jpg"
+                      alt="Mark Profile Picture"
+                    />
                   </div>
-
                 </div>
               </div>
               <div className="flex flex-col gap-2">
@@ -110,13 +117,21 @@ export default function Podcasts() {
                 </div>
                 <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                   <TwitterIcon className="w-5 h-5" />
-                  <Link href="https://x.com/Alisikaundi" className="hover:underline" prefetch={false}>
+                  <Link
+                    href="https://x.com/Alisikaundi"
+                    className="hover:underline"
+                    prefetch={false}
+                  >
                     @Alisikaundi
                   </Link>
                 </div>
                 <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                   <LinkedinIcon className="w-5 h-5" />
-                  <Link href="https://linkedin.com/in/marksikaundi" className="hover:underline" prefetch={false}>
+                  <Link
+                    href="https://linkedin.com/in/marksikaundi"
+                    className="hover:underline"
+                    prefetch={false}
+                  >
                     Mark Sikaundi
                   </Link>
                 </div>
@@ -135,16 +150,28 @@ export default function Podcasts() {
             </div>
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4">Listen to the Podcast</h2>
+            <h2 className="text-2xl font-bold mb-4">Podcast Available On</h2>
             <div className="aspect-video rounded-xl overflow-hidden">
-              <iframe
-                src="https://open.spotify.com/embed/episode/4XZYRd3dondnKGy9p8YITx?utm_source=generator"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              />
+              <a
+                href="https://podcasts.apple.com/us/podcast/tech-hacks-in-africa/id1731008771?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1"
+                style={{
+                  display: "inline-block",
+                  overflow: "hidden",
+                  borderRadius: "13px",
+                  width: "250px",
+                  height: "83px",
+                }}
+              >
+                <img
+                  src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1715135040"
+                  alt="Listen on Apple Podcasts"
+                  style={{
+                    borderRadius: "13px",
+                    width: "250px",
+                    height: "83px",
+                  }}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -173,13 +200,21 @@ export default function Podcasts() {
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <TwitterIcon className="w-5 h-5" />
-                <Link href="https://x.com/Alisikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://x.com/Alisikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   @Alisikaundi
                 </Link>
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <LinkedinIcon className="w-5 h-5" />
-                <Link href="https://linkedin.com/in/marksikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://linkedin.com/in/marksikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   Mark Sikaundi
                 </Link>
               </div>
@@ -205,19 +240,31 @@ export default function Podcasts() {
             <CardContent className="space-y-2">
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <TwitterIcon className="w-5 h-5" />
-                <Link href="https://x.com/Alisikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://x.com/Alisikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   @lupleg
                 </Link>
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <InstagramIcon className="w-5 h-5" />
-                <Link href="https://intagram.com/marksikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://intagram.com/marksikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   Lupleg
                 </Link>
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <YoutubeIcon className="w-5 h-5" />
-                <Link href="https://youtube.com/@Lupleg" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://youtube.com/@Lupleg"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   Lupleg
                 </Link>
               </div>
