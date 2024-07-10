@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Plan() {
   return (
@@ -20,93 +20,122 @@ export default function Plan() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card className="bg-background p-6 flex flex-col gap-4">
             <div className="grid gap-2">
-              <h3 className="text-2xl font-bold">Starter</h3>
+              <h3 className="text-2xl font-bold">PRO Monthly </h3>
               <p className="text-muted-foreground">
                 Perfect for small businesses and individuals.
               </p>
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$9</span>
-              <span className="text-muted-foreground">/month</span>
+              <span className="text-muted-foreground">/Billed every month.</span>
             </div>
             <Separator />
             <div className="grid gap-2">
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                <span>5 GB storage</span>
+                <span>All Coding Challenges (500+)</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                <span>1 user</span>
+                <span>All Video Tutorials</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                <span>Basic analytics</span>
+                <span>Project-Based Roadmaps</span>
               </div>
+              
             </div>
-            <Button size="lg" className="bg-green-950 mt-4">
+            <Link
+              href="#"
+              size="lg"
+              className="inline-flex items-center justify-center h-10 p-6 rounded bg-green-950 text-white font-bold"
+            >
               Get Started
-            </Button>
+            </Link>
           </Card>
           <Card className="bg-green-950 p-6 flex flex-col gap-4 text-primary-foreground">
             <div className="grid gap-2">
-              <h3 className="text-2xl font-bold">Pro</h3>
+              <h3 className="text-2xl font-bold">PRO Gold </h3>
               <p className="text-primary-foreground">
                 For growing businesses and teams.
               </p>
             </div>
             <div className="flex items-end gap-2">
-              <span className="text-4xl font-bold">$29</span>
-              <span className="text-primary-foreground">/month</span>
+              <span className="text-4xl font-bold">$79</span>
+              <span className="text-primary-foreground">/Pay once. Own forever</span>
             </div>
             <Separator />
             <div className="grid gap-2">
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary-foreground" />
-                <span>50 GB storage</span>
+                <span>All Coding Challenges (500+)</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary-foreground" />
-                <span>5 users</span>
+                <span>All Video Tutorials</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary-foreground" />
-                <span>Advanced analytics</span>
+                <span>Project-Based Roadmaps</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckIcon className="w-5 h-5 fill-primary-foreground" />
+                <span>Access to 2 UI templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckIcon className="w-5 h-5 fill-primary" />
+                <span>Live call mentorship</span>
               </div>
             </div>
-            <Button variant="secondary" size="lg" className="mt-4">
+            <Link
+              href="#"
+              size="lg"
+              className="inline-flex items-center justify-center h-10 p-6 rounded bg-white text-[#000000] font-bold"
+            >
               Get Started
-            </Button>
+            </Link>
           </Card>
           <Card className="bg-background p-6 flex flex-col gap-4">
             <div className="grid gap-2">
-              <h3 className="text-2xl font-bold">Enterprise</h3>
+              <h3 className="text-2xl font-bold">PRO Platinum</h3>
               <p className="text-muted-foreground">
                 For large businesses and organizations.
               </p>
             </div>
             <div className="flex items-end gap-2">
-              <span className="text-4xl font-bold">$99</span>
-              <span className="text-muted-foreground">/month</span>
+              <span className="text-4xl font-bold">$139</span>
+              <span className="text-muted-foreground">/Pay once. Own forever</span>
             </div>
             <Separator />
             <div className="grid gap-2">
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                <span>Unlimited storage</span>
+                <span>All Coding Challenges (500+)</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                <span>Unlimited users</span>
+                <span>All Video Tutorials</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                <span>Enterprise-grade analytics</span>
+                <span>Project-Based Roadmaps</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckIcon className="w-5 h-5 fill-primary" />
+                <span>Access to all UI templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckIcon className="w-5 h-5 fill-primary" />
+                <span>Live call mentorship</span>
               </div>
             </div>
-            <Button size="lg" className="bg-green-950 mt-4">
+            <Link
+              href="#"
+              size="lg"
+              className="inline-flex items-center justify-center h-10 p-6 rounded bg-green-950 text-white font-bold"
+            >
               Get Started
-            </Button>
+            </Link>
           </Card>
         </div>
       </div>
