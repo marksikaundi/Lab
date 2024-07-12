@@ -7,6 +7,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Roadmap() {
   return (
@@ -54,7 +55,9 @@ export default function Roadmap() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button variant="outline">Start Now</Button>
+          <Button variant="outline">
+            <Link href="/30-days-of-code">Start Now</Link>
+          </Button>
         </CardFooter>
       </Card>
       <Card className="bg-green-950 border border-green-950">
@@ -92,7 +95,9 @@ export default function Roadmap() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button variant="outline">Start Now</Button>
+          <Button variant="outline">
+            <Link href="/frontend-development">Start Now</Link>
+          </Button>
         </CardFooter>
       </Card>
       <Card className="bg-green-950 border border-green-950">
@@ -130,7 +135,9 @@ export default function Roadmap() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button variant="outline">Start Now</Button>
+          <Button variant="outline">
+            <Link href="/backend-development">Start Now</Link>
+          </Button>
         </CardFooter>
       </Card>
     </div>
