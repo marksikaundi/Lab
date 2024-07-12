@@ -1,9 +1,7 @@
 'use client'
 
-//import users from '@/app/constants/users';
 import React, { useEffect } from 'react';
 import { SignIn, SignOutButton, useUser } from '@clerk/nextjs';
-import SignInHandler from '../../../components/SignInHandler';
 import { useState } from 'react';
 import Image from 'next/image';
 

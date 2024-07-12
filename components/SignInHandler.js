@@ -1,3 +1,4 @@
+'use client';
 import { useUser } from '@clerk/nextjs';
 import { useEffect, useRef } from 'react';
 
@@ -28,7 +29,15 @@ const SignInHandler = () => {
     }
   }, []);
 
-  return
+  return (
+    <>
+    {user && !isUserStoredRef.current ? [] : (
+      <div className="fixed bottom-0 right-0 bg-red-500 text-white p-4">
+        Storing user data...
+        </div>
+        ) }
+    </>
+  )
 };
 
 export default SignInHandler;
