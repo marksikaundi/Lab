@@ -1,7 +1,6 @@
 "use client";
 
 import { useUser } from "@clerk/nextjs";
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,14 +10,6 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import {
-  Table,
-  TableHeader,
-  TableRow,
-  TableHead,
-  TableBody,
-  TableCell,
-} from "@/components/ui/table";
 import Link from "next/link";
 
 export default function Dashboard() {
