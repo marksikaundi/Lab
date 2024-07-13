@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import podcasts from "@/app/constants/podcasts";
+import podcasts from "@/constants/podcasts";
 
-export default function Component() {
+export default function Podcasts() {
   return (
     <div className="w-full">
       <section className="w-full bg-podcast-bg bg-cover h-full lg:h-[100vh]">
@@ -18,11 +18,14 @@ export default function Component() {
               the tech industry with our informative and engaging podcast.
             </p>
             <div className="flex items-center gap-4">
-              <Button size="lg" className="w-full max-w-[200px] md:w-auto bg-[#C24229]">
+              <Button
+                size="lg"
+                className="w-full max-w-[200px] md:w-auto bg-[#C24229]"
+              >
                 Subscribe
               </Button>
               <Link
-                href="#"
+                href="https://youtube.com/@Lupleg"
                 className="text-gray-400 hover:text-gray-50 transition-colors"
                 prefetch={false}
               >
@@ -30,7 +33,7 @@ export default function Component() {
                 <span className="sr-only">Subscribe on YouTube</span>
               </Link>
               <Link
-                href="#"
+                href="https://open.spotify.com/show/24kARiE1lvC1b6GN4AXPmh"
                 className="text-gray-400 hover:text-gray-50 transition-colors"
                 prefetch={false}
               >
@@ -38,7 +41,7 @@ export default function Component() {
                 <span className="sr-only">Subscribe on Spotify</span>
               </Link>
               <Link
-                href="#"
+                href="https://podcasts.apple.com/ng/podcast/tech-hacks-in-africa/id1731008771"
                 className="text-gray-400 hover:text-gray-50 transition-colors"
                 prefetch={false}
               >
@@ -47,6 +50,7 @@ export default function Component() {
               </Link>
             </div>
           </div>
+          {/* TODO: Incase of new plan */}
           {/* <div className="relative h-[300px] overflow-hidden rounded-xl md:h-[400px]">
             <img
               src="/placeholder.svg"
@@ -73,7 +77,9 @@ export default function Component() {
                 <h3 className="text-lg font-bold line-clamp-2 pt-3">
                   Episode {index + 1}: {podcast.title}
                 </h3>
-                <div className="text-gray-500 dark:text-gray-400">{podcast.duration}</div>
+                <div className="text-gray-500 dark:text-gray-400">
+                  {podcast.duration}
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -94,9 +100,11 @@ export default function Component() {
                     Tech Enthusiast and Podcast Host
                   </p>
                   <div className="relative h-[150px] overflow-hidden rounded-xl w-[255px]">
-                  <img src="https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9kY2FzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Mark Profile Picture" />
+                    <img
+                      src="https://utfs.io/f/ff7c57f5-a1b0-4c0c-afde-390ecdf9c87e-6uzm02.jpg"
+                      alt="Mark Profile Picture"
+                    />
                   </div>
-
                 </div>
               </div>
               <div className="flex flex-col gap-2">
@@ -109,13 +117,21 @@ export default function Component() {
                 </div>
                 <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                   <TwitterIcon className="w-5 h-5" />
-                  <Link href="https://x.com/Alisikaundi" className="hover:underline" prefetch={false}>
+                  <Link
+                    href="https://x.com/Alisikaundi"
+                    className="hover:underline"
+                    prefetch={false}
+                  >
                     @Alisikaundi
                   </Link>
                 </div>
                 <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                   <LinkedinIcon className="w-5 h-5" />
-                  <Link href="https://linkedin.com/in/marksikaundi" className="hover:underline" prefetch={false}>
+                  <Link
+                    href="https://linkedin.com/in/marksikaundi"
+                    className="hover:underline"
+                    prefetch={false}
+                  >
                     Mark Sikaundi
                   </Link>
                 </div>
@@ -134,16 +150,28 @@ export default function Component() {
             </div>
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4">Listen to the Podcast</h2>
+            <h2 className="text-2xl font-bold mb-4">Podcast Available On</h2>
             <div className="aspect-video rounded-xl overflow-hidden">
-              <iframe
-                src="https://open.spotify.com/embed/episode/4XZYRd3dondnKGy9p8YITx?utm_source=generator"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              />
+              <a
+                href="https://podcasts.apple.com/us/podcast/tech-hacks-in-africa/id1731008771?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1"
+                style={{
+                  display: "inline-block",
+                  overflow: "hidden",
+                  borderRadius: "13px",
+                  width: "250px",
+                  height: "83px",
+                }}
+              >
+                <img
+                  src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1715135040"
+                  alt="Listen on Apple Podcasts"
+                  style={{
+                    borderRadius: "13px",
+                    width: "250px",
+                    height: "83px",
+                  }}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -172,13 +200,21 @@ export default function Component() {
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <TwitterIcon className="w-5 h-5" />
-                <Link href="https://x.com/Alisikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://x.com/Alisikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   @Alisikaundi
                 </Link>
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <LinkedinIcon className="w-5 h-5" />
-                <Link href="https://linkedin.com/in/marksikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://linkedin.com/in/marksikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   Mark Sikaundi
                 </Link>
               </div>
@@ -204,19 +240,31 @@ export default function Component() {
             <CardContent className="space-y-2">
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <TwitterIcon className="w-5 h-5" />
-                <Link href="https://x.com/Alisikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://x.com/Alisikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   @lupleg
                 </Link>
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <InstagramIcon className="w-5 h-5" />
-                <Link href="https://intagram.com/marksikaundi" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://intagram.com/marksikaundi"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   Lupleg
                 </Link>
               </div>
               <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                 <YoutubeIcon className="w-5 h-5" />
-                <Link href="https://youtube.com/@Lupleg" className="hover:underline" prefetch={false}>
+                <Link
+                  href="https://youtube.com/@Lupleg"
+                  className="hover:underline"
+                  prefetch={false}
+                >
                   Lupleg
                 </Link>
               </div>

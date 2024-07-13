@@ -15,12 +15,14 @@ export default function NotFound() {
         </p>
       </div>
       <div className="mt-8">
-            <Button className="mt-4 px-4 py-2 bg-[#ED7133] hover:bg-black text-white  rounded-full p-8" variant="ghost">
-            <Link className=" text-white text-lg" href="/">
-              Go Home
-            </Link>
-          </Button>
-        
+        <Button
+          className="mt-4 px-4 py-2 bg-[#ED7133] hover:bg-black text-white  rounded-full p-8"
+          variant="ghost"
+        >
+          <Link className=" text-white text-lg" href="/">
+            Go Home
+          </Link>
+        </Button>
       </div>
     </div>
   );

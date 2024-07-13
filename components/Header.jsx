@@ -33,6 +33,13 @@ export default function Header() {
           >
             Dashboard
           </Link>
+
+          <Link
+            className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
+            href="courses"
+          >
+            Courses
+          </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
             href="challenge"
@@ -41,27 +48,24 @@ export default function Header() {
           </Link>
           <Link
             className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="challenges"
+            href="roadmap"
           >
-            Mentorships
-          </Link>
-          <Link
-            className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="account-profile"
-          >
-            account-profile
-          </Link>
-          <Link
-            className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
-            href="profile"
-          >
-            Profile
+            Roadmap
           </Link>
         </nav>
       </div>
 
-      <div className="text-md hidden   p-2  md:block">
-        <UserButton className="m-2 " />
+      <div
+        className="hidden items-center justify-start  space-x-4 text-m font-semibold
+ text-white md:flex"
+      >
+        <Link
+          href="premium"
+          className="rounded bg-green-950 border-2 border-green-950 p-3"
+        >
+          Premium
+        </Link>
+        <UserButton className="mr-20" />
       </div>
 
       {/* mobile view */}
@@ -77,9 +81,18 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="https://lupleg.website/about-us"
+                href="dashboard"
               >
-                About
+                Dashboard
+              </Link>
+            </SheetTrigger>
+
+            <SheetTrigger asChild>
+              <Link
+                className="flex w-full items-center py-2 text-lg font-semibold"
+                href="courses"
+              >
+                Courses
               </Link>
             </SheetTrigger>
             <SheetTrigger asChild>
@@ -93,9 +106,9 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="https://lupleg.website/mentorships"
+                href="roadmap"
               >
-                Mentorships
+                Roadmap
               </Link>
             </SheetTrigger>
             <SheetTrigger asChild>
@@ -115,9 +128,12 @@ export default function Header() {
               </Link>
             </SheetTrigger>
             <div className="w-30 flex   items-center rounded-full">
-              <Button className="text-md text-white">
+              <Button
+                className="text-md text-white font-semibold
+"
+              >
                 <SheetTrigger asChild>
-                  <Link href="account-profile">Go Profile</Link>
+                  <Link href="premium">Premium</Link>
                 </SheetTrigger>
               </Button>
             </div>
