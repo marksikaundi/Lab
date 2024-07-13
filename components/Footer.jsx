@@ -1,6 +1,7 @@
-import { Input } from "@/components/ui/input";
+'use client'
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import NewsLetterSubscribe from "./NewsLetterSubscribe";
 
 export default function Footer() {
   return (
@@ -60,17 +61,7 @@ export default function Footer() {
         </div>
         {/* Newsletter  */}
         <div>
-          <h5 className="mb-4 font-bold">Newsletter</h5>
-          <div className="flex flex-col items-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
-            <Input
-              className="rounded-md text-black"
-              placeholder="Enter Your Email Here"
-              type="text"
-            />
-            <Button className="w-full md:w-auto bg-orange-700 hover:bg-orange-700">
-              Subscribe
-            </Button>
-          </div>
+          <NewsLetterSubscribe />
 
           <div className="mt-8">
             <h5 className="mb-4 font-bold">Support →</h5>
