@@ -1,6 +1,7 @@
 "use client";
 
 import { useUser } from "@clerk/nextjs";
+import SignInHandler from "@/components/SignInHandler";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -150,6 +151,7 @@ export default function Dashboard() {
           </div>
         </section>
       </main>
+      <SignInHandler />
     </div>
   );
 }

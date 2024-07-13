@@ -1,6 +1,7 @@
-import { Input } from "@/components/ui/input";
+'use client'
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import NewsLetterSubscribe from "./NewsLetterSubscribe";
 
 export default function Footer() {
   return (
@@ -68,6 +69,7 @@ export default function Footer() {
         </div>
         {/* Newsletter  */}
         <div>
+          <NewsLetterSubscribe />
           <h5 className="mb-4 font-bold">Newsletter</h5>
           <div className="flex flex-col items-center space-y-2 md:flex-row md:space-x-2 md:space-y-0">
             <Input
@@ -79,7 +81,6 @@ export default function Footer() {
               Subscribe
             </Button>
           </div>
-
           <div className="mt-8">
             <h5 className="mb-4 font-bold">Support →</h5>
             <p>
