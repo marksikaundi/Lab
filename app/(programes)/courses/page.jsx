@@ -34,7 +34,7 @@ export default function Courses() {
               Learn the basics of HTML, CSS, and JavaScript to build modern
               Websites
             </p>
-            <Button size="sm" className="mt-4 bg-green-950 hover:bg-green-950">
+            <Button size="sm" className="mt-4 rounded bg-green-950 hover:bg-green-950">
               <Link href="/web-development">View Course</Link>
             </Button>
           </div>
