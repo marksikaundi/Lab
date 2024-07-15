@@ -27,9 +27,7 @@ export default function Plan() {
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$9</span>
-              <span className="text-muted-foreground">
-                /Billed every month.
-              </span>
+              <span className="text-muted-foreground">/Billed every month.</span>
             </div>
             <Separator />
             <div className="grid gap-2">
@@ -45,6 +43,7 @@ export default function Plan() {
                 <CheckIcon className="w-5 h-5 fill-primary" />
                 <span>Project-Based Roadmaps</span>
               </div>
+              
             </div>
             <Link
               href="#"
@@ -63,9 +62,7 @@ export default function Plan() {
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$79</span>
-              <span className="text-primary-foreground">
-                /Pay once. Own forever
-              </span>
+              <span className="text-primary-foreground">/Pay once. Own forever</span>
             </div>
             <Separator />
             <div className="grid gap-2">
@@ -107,9 +104,7 @@ export default function Plan() {
             </div>
             <div className="flex items-end gap-2">
               <span className="text-4xl font-bold">$139</span>
-              <span className="text-muted-foreground">
-                /Pay once. Own forever
-              </span>
+              <span className="text-muted-foreground">/Pay once. Own forever</span>
             </div>
             <Separator />
             <div className="grid gap-2">
