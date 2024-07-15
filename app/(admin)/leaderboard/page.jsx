@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react';
-import { SignIn, SignOutButton, useUser } from '@clerk/nextjs';
+import { SignIn, SignOutButton, UserButton, useUser } from '@clerk/nextjs';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -45,13 +45,14 @@ const Ladderboard = () => {
               <tr key={user.name} className={`transition-colors duration-300 hover:bg-gray-300`}>
                 <td className="py-3 px-4 text-center"><span className='p-2 px-3 rounded-full bg-orange-600'>{index + 1}</span></td>
                 <td className="py-3 px-4 md:pl-28 flex items-center">
-                  <Image
+                  {/* <Image
                     className="w-8 h-8 rounded-full mr-3 hidden md:block"
                     src={'/reactjs.png'}
                     alt={user.name}
                     width={32}
                     height={32}
-                  />
+                  /> */}
+                  <UserButton className="w-8 h-8 rounded-full mr-3 hidden md:block" />
                   <span className="text-gray-800">{user.name}</span>
                 </td>
                 <td className="py-3 px-4 text-center">{user.score}</td>
