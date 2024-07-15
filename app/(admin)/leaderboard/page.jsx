@@ -29,12 +29,12 @@ const Ladderboard = () => {
   
 
   return (
-    <div className="container mx-auto p-6 bg-gray-100">
-      <h1 className="text-3xl font-bold text-center text-green-600 mb-6">Leaderboard</h1>
+    <div className="container mx-auto p-6 bg-white">
+      <h1 className="text-3xl font-bold text-center text-black mb-6">Leaderboard</h1>
       <div className="overflow-x-auto rounded-lg shadow-md">
         <table className="min-w-full bg-white rounded-lg overflow-hidden">
           <thead>
-            <tr className="bg-green-600 text-white h-16">
+            <tr className="bg-green-950 text-white h-16">
               <th className="w-1/6 py-3 px-4 uppercase font-bold text-sm">Rank</th>
               <th className="w-1/3 py-3 px-4 uppercase font-bold text-sm pr-8">Name</th>
               <th className="w-1/6 py-3 px-4 uppercase font-bold text-sm">Score</th>
@@ -43,7 +43,7 @@ const Ladderboard = () => {
           <tbody>
             {users.map((user, index) => (
               <tr key={user.name} className={`transition-colors duration-300 hover:bg-gray-300`}>
-                <td className="py-3 px-4 text-center"><span className='p-2 px-3 rounded-md bg-orange-600'>{index + 1}</span></td>
+                <td className="py-3 px-4 text-center"><span className='p-2 px-3 rounded-full bg-orange-600'>{index + 1}</span></td>
                 <td className="py-3 px-4 md:pl-28 flex items-center">
                   <Image
                     className="w-8 h-8 rounded-full mr-3 hidden md:block"
