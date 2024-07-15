@@ -242,7 +242,7 @@ export default function Component() {
                 <CardHeader>
                   <div className="flex items-center gap-4">
                     <Avatar>
-                      <img src="/placeholder.svg" />
+                      <img src="#" />
                       <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
                     <div>
@@ -267,7 +267,7 @@ export default function Component() {
                 <CardHeader>
                   <div className="flex items-center gap-4">
                     <Avatar>
-                      <img src="/placeholder.svg" />
+                      <img src="#" />
                       <AvatarFallback>SM</AvatarFallback>
                     </Avatar>
                     <div>
@@ -293,7 +293,7 @@ export default function Component() {
                 <CardHeader>
                   <div className="flex items-center gap-4">
                     <Avatar>
-                      <img src="/placeholder.svg" />
+                      <img src="#" />
                       <AvatarFallback>LW</AvatarFallback>
                     </Avatar>
                     <div>

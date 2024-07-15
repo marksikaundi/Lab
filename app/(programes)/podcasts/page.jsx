@@ -53,7 +53,7 @@ export default function Podcasts() {
           {/* TODO: Incase of new plan */}
           {/* <div className="relative h-[300px] overflow-hidden rounded-xl md:h-[400px]">
             <img
-              src="/placeholder.svg"
+              src="#"
               alt="Podcast Cover Art"
               fill
               className="object-cover"

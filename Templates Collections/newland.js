@@ -231,7 +231,7 @@ export default function Home() {
               </div>
               <div className="flex justify-end">
                 <img
-                  src="/placeholder.svg"
+                  src="#"
                   width="400"
                   height="300"
                   alt="Coding Illustration"

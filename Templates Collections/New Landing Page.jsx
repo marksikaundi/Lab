@@ -3,29 +3,49 @@
  * @see https://v0.dev/t/Ae0g6KtzAJW
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
+        <Link
+          href="#"
+          className="flex items-center justify-center"
+          prefetch={false}
+        >
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Features
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Pricing
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             About
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Contact
           </Link>
         </nav>
@@ -41,8 +61,8 @@ export default function Component() {
               </div>
               <div className="flex flex-col items-start space-y-4">
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable.
-                  Open Source.
+                  Beautifully designed components that you can copy and paste
+                  into your apps. Accessible. Customizable. Open Source.
                 </p>
                 <div className="space-x-4">
                   <Link
@@ -63,7 +83,7 @@ export default function Component() {
               </div>
             </div>
             <img
-              src="/placeholder.svg"
+              src="#"
               width="1270"
               height="300"
               alt="Hero"
@@ -78,48 +98,70 @@ export default function Component() {
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                   New Features
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Faster iteration. More innovation.</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Faster iteration. More innovation.
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The platform for rapid progress. Let your team focus on shipping features instead of managing
-                  infrastructure with automated CI/CD, built-in testing, and integrated collaboration.
+                  The platform for rapid progress. Let your team focus on
+                  shipping features instead of managing infrastructure with
+                  automated CI/CD, built-in testing, and integrated
+                  collaboration.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Infinite scalability, zero config</h3>
+                <h3 className="text-lg font-bold">
+                  Infinite scalability, zero config
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Enable code to run on-demand without needing to manage your own infrastructure or upgrade hardware.
+                  Enable code to run on-demand without needing to manage your
+                  own infrastructure or upgrade hardware.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Real-time insights and controls</h3>
+                <h3 className="text-lg font-bold">
+                  Real-time insights and controls
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Get granular, first-party, real-user metrics on site performance per deployment.
+                  Get granular, first-party, real-user metrics on site
+                  performance per deployment.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Personalization at the edge</h3>
+                <h3 className="text-lg font-bold">
+                  Personalization at the edge
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Deliver dynamic, personalized content, while ensuring users only see the best version of your site.
+                  Deliver dynamic, personalized content, while ensuring users
+                  only see the best version of your site.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Real-time insights and controls</h3>
+                <h3 className="text-lg font-bold">
+                  Real-time insights and controls
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Get granular, first-party, real-user metrics on site performance per deployment.
+                  Get granular, first-party, real-user metrics on site
+                  performance per deployment.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Personalization at the edge</h3>
+                <h3 className="text-lg font-bold">
+                  Personalization at the edge
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Deliver dynamic, personalized content, while ensuring users only see the best version of your site.
+                  Deliver dynamic, personalized content, while ensuring users
+                  only see the best version of your site.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Infinite scalability, zero config</h3>
+                <h3 className="text-lg font-bold">
+                  Infinite scalability, zero config
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Enable code to run on-demand without needing to manage your own infrastructure or upgrade hardware.
+                  Enable code to run on-demand without needing to manage your
+                  own infrastructure or upgrade hardware.
                 </p>
               </div>
             </div>
@@ -148,17 +190,26 @@ export default function Component() {
                 Experience the workflow the best frontend teams love.
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Let your team focus on shipping features instead of managing infrastructure with automated CI/CD.
+                Let your team focus on shipping features instead of managing
+                infrastructure with automated CI/CD.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
               <form className="flex space-x-2">
-                <Input type="email" placeholder="Enter your email" className="max-w-lg flex-1" />
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="max-w-lg flex-1"
+                />
                 <Button type="submit">Sign Up</Button>
               </form>
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 Sign up to get notified when we launch.
-                <Link href="#" className="underline underline-offset-2" prefetch={false}>
+                <Link
+                  href="#"
+                  className="underline underline-offset-2"
+                  prefetch={false}
+                >
                   Terms &amp; Conditions
                 </Link>
               </p>
@@ -172,16 +223,20 @@ export default function Component() {
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                   New Features
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Faster iteration. More innovation.</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Faster iteration. More innovation.
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The platform for rapid progress. Let your team focus on shipping features instead of managing
-                  infrastructure with automated CI/CD, built-in testing, and integrated collaboration.
+                  The platform for rapid progress. Let your team focus on
+                  shipping features instead of managing infrastructure with
+                  automated CI/CD, built-in testing, and integrated
+                  collaboration.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src="#"
                 width="550"
                 height="310"
                 alt="Image"
@@ -193,7 +248,8 @@ export default function Component() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Collaboration</h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Make collaboration seamless with built-in code review tools.
+                        Make collaboration seamless with built-in code review
+                        tools.
                       </p>
                     </div>
                   </li>
@@ -209,7 +265,8 @@ export default function Component() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Scale</h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Deploy to the cloud with a single click and scale with ease.
+                        Deploy to the cloud with a single click and scale with
+                        ease.
                       </p>
                     </div>
                   </li>
@@ -225,7 +282,8 @@ export default function Component() {
                 Experience the workflow the best frontend teams love.
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Let your team focus on shipping features instead of managing infrastructure with automated CI/CD.
+                Let your team focus on shipping features instead of managing
+                infrastructure with automated CI/CD.
               </p>
             </div>
             <div className="flex space-x-4 lg:justify-end">
@@ -249,7 +307,7 @@ export default function Component() {
         <section className="w-" />
       </main>
     </div>
-  )
+  );
 }
 
 function MountainIcon(props) {
@@ -268,5 +326,5 @@ function MountainIcon(props) {
     >
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
-  )
+  );
 }

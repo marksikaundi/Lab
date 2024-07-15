@@ -89,7 +89,7 @@ export default function Contact() {
                 alt="Map"
                 className="aspect-[2/1] w-full rounded-lg object-cover"
                 height="400"
-                src="/placeholder.svg"
+                src="#"
                 width="800"
               /> */}
             </div>

@@ -28,7 +28,7 @@ export default function Component() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 1"
                 width={400}
                 height={300}
@@ -44,7 +44,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 2"
                 width={400}
                 height={300}
@@ -60,7 +60,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 3"
                 width={400}
                 height={300}
@@ -76,7 +76,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 4"
                 width={400}
                 height={300}
@@ -92,7 +92,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 5"
                 width={400}
                 height={300}
@@ -108,7 +108,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 6"
                 width={400}
                 height={300}
@@ -124,7 +124,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 7"
                 width={400}
                 height={300}
@@ -140,7 +140,7 @@ export default function Component() {
             </div>
             <div className="rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
               <img
-                src="/placeholder.svg"
+                src="#"
                 alt="Challenge 8"
                 width={400}
                 height={300}

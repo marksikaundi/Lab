@@ -73,7 +73,7 @@ export default function Sitemap() {
                 alt="Features"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
-                src="/placeholder.svg"
+                src="#"
                 width="550"
               />
             </div>
@@ -98,7 +98,7 @@ export default function Sitemap() {
                       alt="Avatar"
                       className="rounded-full"
                       height="48"
-                      src="/placeholder.svg"
+                      src="#"
                       style={{
                         aspectRatio: "48/48",
                         objectFit: "cover",
@@ -128,7 +128,7 @@ export default function Sitemap() {
                       alt="Avatar"
                       className="rounded-full"
                       height="48"
-                      src="/placeholder.svg"
+                      src="#"
                       style={{
                         aspectRatio: "48/48",
                         objectFit: "cover",
@@ -158,7 +158,7 @@ export default function Sitemap() {
                       alt="Avatar"
                       className="rounded-full"
                       height="48"
-                      src="/placeholder.svg"
+                      src="#"
                       style={{
                         aspectRatio: "48/48",
                         objectFit: "cover",

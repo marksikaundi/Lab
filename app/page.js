@@ -38,7 +38,7 @@ export default function Dashboard() {
               </div>
             </div>
             <img
-              src="/placeholder.svg"
+              src="#"
               width="550"
               height="550"
               alt="Course Hero"
@@ -197,7 +197,7 @@ export default function Dashboard() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src="#"
                 width="300"
                 height="300"
                 alt="Instructor"
