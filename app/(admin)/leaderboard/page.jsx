@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import { SignIn, SignOutButton, UserButton, useUser } from '@clerk/nextjs';
 import { useState } from 'react';
 import Image from 'next/image';
+import { FaCircleUser } from "react-icons/fa6";
+
 
 
 
@@ -52,7 +54,7 @@ const Ladderboard = () => {
                     width={32}
                     height={32}
                   /> */}
-                  <UserButton className="w-8 h-8 rounded-full mr-3 hidden md:block" />
+                  <FaCircleUser className="w-8 h-8 rounded-full mr-4 hidden md:block" />
                   <span className="text-gray-800">{user.name}</span>
                 </td>
                 <td className="py-3 px-4 text-center">{user.score}</td>
