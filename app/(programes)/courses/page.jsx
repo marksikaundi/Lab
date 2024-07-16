@@ -34,7 +34,10 @@ export default function Courses() {
               Learn the basics of HTML, CSS, and JavaScript to build modern
               Websites
             </p>
-            <Button size="sm" className="mt-4 rounded bg-green-950 hover:bg-green-950">
+            <Button
+              size="sm"
+              className="mt-4 rounded bg-green-950 hover:bg-green-950"
+            >
               <Link href="/web-development">View Course</Link>
             </Button>
           </div>
@@ -60,8 +63,11 @@ export default function Courses() {
               Dive deep into React.js and learn how to build complex, scalable
               web applications.
             </p>
-            <Button size="sm" className="mt-4">
-              View Course
+            <Button
+              size="sm"
+              className="mt-4 rounded bg-green-950 hover:bg-green-950"
+            >
+              <Link href="/react-basics">View Course</Link>
             </Button>
           </div>
         </div>
@@ -88,8 +94,11 @@ export default function Courses() {
               Enhance your problem-solving skills and master the fundamentals of
               computer science.
             </p>
-            <Button size="sm" className="mt-4">
-              View Course
+            <Button
+              size="sm"
+              className="mt-4 rounded bg-green-950 hover:bg-green-950"
+            >
+              <Link href="/data-structure-and-algorithms">View Course</Link>
             </Button>
           </div>
         </div>
