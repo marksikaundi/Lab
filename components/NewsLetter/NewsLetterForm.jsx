@@ -1,6 +1,4 @@
 import { useState } from "react";
-//import { sanitize } from '../../../utils/miscellaneous';
-//import Loading from '../../loading';
 import { Button } from "@/components/ui/button";
 
 const NewsletterForm = ({ status, message, onValidated }) => {
@@ -16,21 +14,16 @@ const NewsletterForm = ({ status, message, onValidated }) => {
     }
 
     const isFormValidated = onValidated({ EMAIL: email });
-
-    // On success return true
     return email && email.indexOf("@") > -1 && isFormValidated;
   };
 
-  const handleInputKeyEvent = ( event ) => {
+  const handleInputKeyEvent = (event) => {
     setError(null);
-    // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
-      // Cancel the default action, if needed
       event.preventDefault();
-      // Trigger the button element with a click
       handleSubmit();
     }
-  }
+  };
 
   const getMessage = (message) => {
     if (!message) {
@@ -64,7 +57,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
         </Button>
       </div>
       <div className="min-h-42px">
-        { 'sending' === status ? <div>Sending...</div> : null }
+        {"sending" === status ? <div>Sending...</div> : null}
         {"error" === status || error ? (
           <div
             className="text-red-700 pt-2"
@@ -76,7 +69,6 @@ const NewsletterForm = ({ status, message, onValidated }) => {
             className="text-green-200 font-bold pt-2"
             dangerouslySetInnerHTML={{ __html: message }}
           />
-
         )}
       </div>
     </div>
