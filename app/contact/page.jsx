@@ -84,15 +84,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg border border-gray-200 dark:border-gray-800">
-              {/* <img
-                alt="Map"
-                className="aspect-[2/1] w-full rounded-lg object-cover"
-                height="400"
-                src="#"
-                width="800"
-              /> */}
-            </div>
           </div>
         </div>
       </section>
