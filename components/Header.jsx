@@ -16,15 +16,6 @@ export default function Header() {
         </Link>
       </div>
 
-      {/* TODO: Add a beta tag, but remove it when the site is out of beta */}
-      <div className="flex items-center space-x-3 bg-[#0F172A] rounded-md border border-white">
-        <Link href="#">
-          <h1 className="p-2 text-md font-semibold  text-white dark:text-white">
-            Beta
-          </h1>
-        </Link>
-      </div>
-
       <div className="hidden md:block">
         <nav className="flex space-x-6">
           <Link
@@ -129,8 +120,7 @@ export default function Header() {
             </SheetTrigger>
             <div className="w-30 flex   items-center rounded-full">
               <Button
-                className="text-md text-white font-semibold
-"
+                className="text-md text-white font-semibold"
               >
                 <SheetTrigger asChild>
                   <Link href="premium">Premium</Link>
