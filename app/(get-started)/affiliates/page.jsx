@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Component() {
+export default function Affiliates() {
   return (
     <div className="bg-gray-50">
       <div className="flex flex-col gap-2 text-center">
@@ -140,6 +140,7 @@ export default function Component() {
           </div>
         </div>
       </div>
+      {/* TODO: Newsletter component to be added */}
     </div>
   );
 }
