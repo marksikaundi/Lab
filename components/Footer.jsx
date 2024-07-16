@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import NewsLetterSubscribe from "./NewsLetterSubscribe";
+import NewsLetterSubscribe from "./NewsLetter/NewsLetterSubscribe";
 
 export default function Footer() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useUser } from "@clerk/nextjs";
-import SignInHandler from "@/components/SignInHandler";
+import SignInHandler from "@/components/NewsLetter/SignInHandler";
 import { Button } from "@/components/ui/button";
 import {
   Card,
