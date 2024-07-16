@@ -12,7 +12,6 @@ export const GET = async (request) => {
   }
 };
 
-// TODO: Implement POST method to create a new challenge @jiriDavid
 export const POST = async (request) => {
   try {
     await dbConnect();
@@ -24,7 +23,6 @@ export const POST = async (request) => {
   }
 };
 
-// TODO: Implement PUT method to update a challenge
 export const PUT = async (request) => {
   try {
     await dbConnect();
