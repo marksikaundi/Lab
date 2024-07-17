@@ -43,6 +43,12 @@ export default function Header() {
           >
             Roadmap
           </Link>
+          <Link
+            className="text-black hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200"
+            href="podcasts"
+          >
+            Podcasts
+          </Link>
         </nav>
       </div>
 
@@ -113,7 +119,7 @@ export default function Header() {
             <SheetTrigger asChild>
               <Link
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                href="https://lupleg.website/podcasts"
+                href="podcasts"
               >
                 Podcasts
               </Link>
