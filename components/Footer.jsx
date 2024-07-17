@@ -27,6 +27,12 @@ export default function Footer() {
         <div>
           <h5 className="mb-4 font-bold">Links</h5>
           <ul className="space-y-3">
+          <li>
+              <Link href="challenge">Challenge</Link>
+            </li>
+            <li>
+              <Link href="academy">Academy</Link>
+            </li>
             <li>
               <Link href="partner">Partner with Us</Link>
             </li>
@@ -42,10 +48,13 @@ export default function Footer() {
           <h5 className="mb-4 font-bold">Resources</h5>
           <ul className="space-y-3">
             <li>
-              <Link href="podcasts">Podcasts</Link>
+              <Link href="affiliates">Affiliates</Link>
             </li>
             <li>
-              <Link href="https://mms.lupleg.website">MMS</Link>
+              <Link href="sitemap">Sitemap</Link>
+            </li>
+            <li>
+              <Link href="https://ac.lupleg.website">Quize</Link>
             </li>
             <li>
               <Link href="https://ui.lupleg.website">Templates</Link>
