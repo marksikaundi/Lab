@@ -36,10 +36,6 @@ export default function Footer() {
             <li>
               <Link href="for-orgs">For ORGs</Link>
             </li>
-
-            <li>
-              <Link href="sponsor">Sponsor</Link>
-            </li>
           </ul>
         </div>
         <div>
