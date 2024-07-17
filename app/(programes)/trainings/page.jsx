@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Trainings() {
   return (
@@ -14,9 +15,8 @@ export default function Trainings() {
               </div>
               <div className="flex flex-col items-start space-y-4">
                 <p className="mx-auto max-w-[700px] text-black md:text-xl">
-                  Unlock your full potential with Lupleg's comprehensive
-                  training programs. Gain practical expertise and stay ahead of
-                  the curve in the ever-evolving world of software development.
+                  ✅ Gain practical expertise and stay ahead of the curve in the
+                  ever-evolving world of software development.
                 </p>
               </div>
             </div>
@@ -32,11 +32,13 @@ export default function Trainings() {
                       Full-Stack Development
                     </h2>
                     <p className="mt-2 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                      Become a versatile full-stack developer with our
-                      comprehensive training program.
+                      ✅ Become a versatile developer with our comprehensive
+                      training
                     </p>
                   </div>
-                  <Button variant="link">Learn More</Button>
+                  <Link href="#" variant="link" className="py-12">
+                    →
+                  </Link>
                 </div>
                 <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
@@ -46,7 +48,7 @@ export default function Trainings() {
                     <ul className="mt-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
                       <li>
                         <CheckIcon className="mr-2 inline-block h-4 w-4 text-green-500" />
-                        React.js
+                        React.js & Nextjs
                       </li>
                       <li>
                         <CheckIcon className="mr-2 inline-block h-4 w-4 text-green-500" />
@@ -62,6 +64,7 @@ export default function Trainings() {
                       </li>
                     </ul>
                   </div>
+
                   <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
                     <h3 className="text-lg font-semibold">
                       Back-End Development
@@ -117,11 +120,12 @@ export default function Trainings() {
                       Data Engineering
                     </h2>
                     <p className="mt-2 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                      Unlock the power of data with our comprehensive data
-                      engineering training program.
+                      ✅ The comprehensive data engineering training program.
                     </p>
                   </div>
-                  <Button variant="link">Learn More</Button>
+                  <Link href="#" variant="link">
+                    →
+                  </Link>
                 </div>
                 <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
@@ -196,11 +200,13 @@ export default function Trainings() {
                       Cloud Engineering
                     </h2>
                     <p className="mt-2 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                      Become a cloud expert with our comprehensive training
-                      program on cloud infrastructure and architecture.
+                      ✅ Become an expert in cloud infrastructure and
+                      architecture engineer.
                     </p>
                   </div>
-                  <Button variant="link">Learn More</Button>
+                  <Link href="#" variant="link">
+                    →
+                  </Link>
                 </div>
                 <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
@@ -214,7 +220,7 @@ export default function Trainings() {
                       </li>
                       <li>
                         <CheckIcon className="mr-2 inline-block h-4 w-4 text-green-500" />
-                        Cloud Service Models (IaaS, PaaS, SaaS)
+                        Cloud Service Models ( PaaS, SaaS)
                       </li>
                       <li>
                         <CheckIcon className="mr-2 inline-block h-4 w-4 text-green-500" />
