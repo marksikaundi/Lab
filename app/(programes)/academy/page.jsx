@@ -43,7 +43,7 @@ export default function Academy() {
               <img
                 alt="Web Development Course"
                 className="object-cover"
-                src="/web.png"
+                src="/angela.png"
               />
             </div>
           </div>
