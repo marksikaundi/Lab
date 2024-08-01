@@ -99,7 +99,7 @@ function DashNav() {
       <div className="border lg:flex rounded-lg px-0 h-10 pl-4 hidden">
         <input
           type="text"
-          placeholder="search for a challenge"
+          placeholder="search for any course"
           className="w-[500px] border-none outline-none"
         />
         <button className="bg-green-950 p-2 px-1 rounded-r-lg w-10 flex justify-center items-center hover:bg-green-900 h-full">
