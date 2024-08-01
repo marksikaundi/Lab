@@ -106,10 +106,11 @@ function DashNav() {
           <FaSearch className="text-[#ffffff]" />
         </button>
       </div>
-      <div>
-        <button className="flex space-x-2 border rounded-lg p-2 justify-between tex-lg items-center hover:bg-slate-200">
-          <MdLogin /> <span>Login</span>
-        </button>
+      <div className="flex space-x-2 border rounded-lg p-2 justify-between tex-lg items-center hover:bg-green-950 hover:text-white">
+        <Link href="/sign-in">
+          {" "}
+          <span>Sign In</span>
+        </Link>
       </div>
     </div>
   );
