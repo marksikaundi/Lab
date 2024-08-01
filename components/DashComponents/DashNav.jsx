@@ -62,7 +62,7 @@ function DashNav() {
       {isMenuOpen && (
         <div className="menu-panel flex flex-col space-y-2 pt-2 pb-2 px-3 mx-8 fixed z-50 top-20 w-[70%] bg-white border-r -left-8  transition-transform duration-300 transform translate-x-0 h-screen">
           <Link
-            href="/dashboard-2"
+            href="/dashboard"
             className="rounded-lg w-full flex px-2 h-12 justify-start items-center space-x-2"
             id="aLink"
             onClick={closeMenu}
