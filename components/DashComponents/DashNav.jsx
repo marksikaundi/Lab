@@ -9,6 +9,7 @@ import { BsBrowserSafari } from "react-icons/bs";
 import { GrWorkshop } from "react-icons/gr";
 import { MdLeaderboard } from "react-icons/md";
 import { RiNewsLine } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 
 function DashNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ function DashNav() {
   }, []);
 
   return (
-    <div className="h-20 flex space-x-8 justify-between items-center md:px-8 px-2 border-b fixed top-0 w-full z-40 bg-white ">
+    <div className="h-20 flex md:space-x-8 justify-between items-center md:px-8 px-2 border-b fixed top-0 w-full z-40 bg-white ">
       <div className="lg:flex space-x-4 hidden">
         <img
           src="/profile-sample.jpeg"
@@ -48,10 +49,11 @@ function DashNav() {
         </div>
       </div>
       <button onClick={toggleMenu} className="block lg:hidden">
-        <RxHamburgerMenu className="h-8 w-8" />
+        {!isMenuOpen ? <RxHamburgerMenu className="h-8 w-8" /> : <IoClose className="h-8 w-8" />}
       </button>
       {isMenuOpen && (
-        <div className="menu-panel flex flex-col space-y-2 pt-2 pb-2 px-3 fixed z-50 top-0 w-[70%] bg-white border-r -left-8  transition-transform duration-300 transform translate-x-0 h-screen">
+        <div className="menu-panel flex flex-col space-y-2 pt-2 pb-2 px-3 mx-8 fixed z-50 top-20 w-[70%] bg-white border-r -left-8  transition-transform duration-300 transform translate-x-0 h-screen">
+
           <Link
             href="/dashboard-2"
             className="rounded-lg w-full flex px-2 h-12 justify-start items-center space-x-2"
