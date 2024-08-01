@@ -2,6 +2,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import DashNav from "@/components/DashComponents/DashNav";
 import LeftSideBar from "@/components/DashComponents/LeftSideBar";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+            <ClerkProvider>
+
       <body className={inter.className}>
         <DashNav />
         <div className="">
@@ -22,6 +31,8 @@ export default function RootLayout({ children }) {
           </div>
         </div>
       </body>
+      </ClerkProvider>
+
     </html>
   );
 }
