@@ -34,9 +34,9 @@ function LeftSideBar() {
           <p className="pb-2 text-sm">
             Unlock all courses, get access to source code, and more.
           </p>
-          <button className="bg-green-950 text-white w-full rounded-lg py-2 hover:bg-green-900">
-            Upgrade
-          </button>
+          <div className="bg-green-950 text-white w-full rounded-lg py-2 hover:bg-green-900">
+            <Link href="https://www.lupleg.website/premium">Upgrade</Link>
+          </div>
         </div>
       </div>
       <Separator className="my-4 " />
