@@ -65,7 +65,10 @@ function LeftSideBar() {
         <span>&#169; {currentYear} Lupleg Labs </span>
 
         <button className="hover:bg-gray-100 p-2 rounded-md">
-          <CiMenuKebab className="h-6 w-6" />
+          <Link href="/settings">
+            {" "}
+            <CiMenuKebab className="h-6 w-6" />
+          </Link>
         </button>
       </div>
     </div>
