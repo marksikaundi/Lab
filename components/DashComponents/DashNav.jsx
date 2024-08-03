@@ -39,12 +39,8 @@ function DashNav() {
   return (
     <div className="h-20 flex md:space-x-8 justify-between items-center md:px-8 px-2 border-b fixed top-0 w-full z-40 bg-white ">
       <div className="lg:flex space-x-4 hidden">
-        {/* <img
-          src="/profile-sample.jpeg"
-          alt="avatar"
-          className="h-12 w-12 rounded-full"
-        /> */}
-        <UserButton className="h-20 w-20 rounded-full" />
+        {/* TODO: Userbutton needs padding */}
+        <UserButton className="h-20 pl-0 w-20 rounded-full" />
         <div>
           <h3 className="text-lg font-bold">Welcome to Lupleg</h3>
           <p className="text-sm">
