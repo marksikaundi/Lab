@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Progress } from "@/components/ui/progress";
 import { IoBookOutline } from "react-icons/io5";
 
-export default function page() {
+export default function Courses() {
   return (
     <div className="flex gap-4 mt-2 w-full flex-wrap space-y-4 lg:space-y-0 h-full">
       <div className="rounded lg:w-[535px] w-full ">
