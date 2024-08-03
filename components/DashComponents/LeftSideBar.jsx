@@ -7,12 +7,12 @@ import { Separator } from "@/components/ui/separator";
 import { CiMenuKebab } from "react-icons/ci";
 import { RxHome } from "react-icons/rx";
 import Link from "next/link";
+import FooterSidebar from "./FooterSidebar";
 
 function LeftSideBar() {
-  const currentYear = new Date().getFullYear();
 
   return (
-    <div className="w-72 lg:flex flex-col justify-start items-center fixed space-y-2 h-[473px] pt-2 left-0 top-20 z-40 overflow-y-scroll hidden">
+    <div className="w-72 lg:flex flex-col justify-start items-center fixed space-y-2 pt-2 left-0 top-20 z-40 overflow-y-scroll hidden">
       <div className="flex flex-col space-y-2 w-full pt-2 pb-2 px-3">
         <Link
           href="/"
@@ -49,28 +49,7 @@ function LeftSideBar() {
           <span>NewsLetter</span>
         </Link>
       </div>
-      <div className="w-full px-3">
-        <div className="border p-3 rounded-lg mb-4">
-          <h2 className="text-lg font-bold py-2">Upgrade to pro</h2>
-          <p className="pb-2 text-sm">
-            Unlock all courses, get access to source code, and more.
-          </p>
-          <button className="bg-green-950 text-white w-full rounded-lg py-2 hover:bg-green-900">
-            <Link href="https://www.lupleg.website/premium">Upgrade</Link>
-          </button>
-        </div>
-      </div>
-      <Separator className="my-4 " />
-      <div className="flex space-x-4 text-xs justify-between items-center w-full px-3">
-        <span>&#169; {currentYear} Lupleg Labs </span>
-
-        <button className="hover:bg-gray-100 p-2 rounded-md">
-          <Link href="/settings">
-            {" "}
-            <CiMenuKebab className="h-6 w-6" />
-          </Link>
-        </button>
-      </div>
+      <FooterSidebar/>
     </div>
   );
 }
