@@ -19,7 +19,7 @@ export default function page() {
           className="rounded block"
         />
         <div className="p-4 rounded mt-8 flex flex-col py-4 border">
-          <div className="w-40 bg-gray-100 flex space-x-2 items-center justify-center rounded mb-3">
+          <div className="w-40 bg-gray-100 flex space-x-2 items-center py-3 justify-center rounded mb-3">
             <IoBookOutline className="text-green-950" />
             <span>52 Chapters</span>
           </div>
@@ -86,7 +86,7 @@ export default function page() {
           href="#"
           className="border p-3 rounded-lg mb-4  lg:w-[400px] w-full h-[100px] text-white flex flex-col items-center justify-center hover:bg-gray-100"
         >
-          <FaGithub className="h-20 w-20 text-green-950"/>
+          <FaGithub className="h-20 w-20 text-green-950" />
           <span className="text-gray-400 hover:text-gray-500">Source code</span>
         </Link>
       </div>
