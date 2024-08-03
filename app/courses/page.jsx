@@ -11,7 +11,7 @@ import { IoBookOutline } from "react-icons/io5";
 export default function page() {
   return (
     <div className="flex gap-4 mt-2 w-full flex-wrap space-y-4 lg:space-y-0 h-full">
-      <div className="rounded lg:w-[535px] w-full">
+      <div className="rounded lg:w-[535px] w-full ">
         <CldVideoPlayer
           width="1920"
           height="1080"
