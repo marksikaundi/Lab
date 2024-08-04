@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function Workshops() {
   return (
@@ -23,13 +22,14 @@ export default function Workshops() {
               />
               <div className="p-4">
                 <h3 className="text-lg font-semibold">Introduction to React</h3>
-                <p className="mt-2 text-muted-foreground">
-                  Learn the fundamentals of React, a popular JavaScript library
-                  for building user interfaces.
-                </p>
-                <Button variant="link" size="sm" className="mt-4">
+
+                <button
+                  variant="link"
+                  size="sm"
+                  className="mt-4 p-2 text-green-950 bg-gray-200 rounded-md"
+                >
                   Learn More
-                </Button>
+                </button>
               </div>
             </Link>
           </div>
@@ -47,13 +47,13 @@ export default function Workshops() {
                 <h3 className="text-lg font-semibold">
                   Mastering JavaScript for Beginners
                 </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Dive into the world of JavaScript and learn how to build
-                  interactive web applications.
-                </p>
-                <Button variant="link" size="sm" className="mt-4">
+                <button
+                  variant="link"
+                  size="sm"
+                  className="mt-4 p-2 text-green-950 bg-gray-200 rounded-md"
+                >
                   Learn More
-                </Button>
+                </button>
               </div>
             </Link>
           </div>
@@ -71,13 +71,14 @@ export default function Workshops() {
                 <h3 className="text-lg font-semibold">
                   Responsive Web Design Essentials
                 </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Learn how to create websites that look great on any device,
-                  from desktop to mobile.
-                </p>
-                <Button variant="link" size="sm" className="mt-4">
+
+                <button
+                  variant="link"
+                  size="sm"
+                  className="mt-4 p-2 text-green-950 bg-gray-200 rounded-md"
+                >
                   Learn More
-                </Button>
+                </button>
               </div>
             </Link>
           </div>
@@ -95,13 +96,14 @@ export default function Workshops() {
                 <h3 className="text-lg font-semibold">
                   Advanced CSS Techniques
                 </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Explore advanced CSS concepts and techniques to create
-                  stunning and responsive web designs.
-                </p>
-                <Button variant="link" size="sm" className="mt-4">
+
+                <button
+                  variant="link"
+                  size="sm"
+                  className="mt-4 p-2 text-green-950 bg-gray-200 rounded-md"
+                >
                   Learn More
-                </Button>
+                </button>
               </div>
             </Link>
           </div>
@@ -120,13 +122,14 @@ export default function Workshops() {
                 <h3 className="text-lg font-semibold">
                   Advanced CSS Techniques
                 </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Explore advanced CSS concepts and techniques to create
-                  stunning and responsive web designs.
-                </p>
-                <Button variant="link" size="sm" className="mt-4">
+
+                <button
+                  variant="link"
+                  size="sm"
+                  className="mt-4 p-2 text-green-950 bg-gray-200 rounded-md"
+                >
                   Learn More
-                </Button>
+                </button>
               </div>
             </Link>
           </div>
@@ -145,13 +148,14 @@ export default function Workshops() {
                 <h3 className="text-lg font-semibold">
                   Advanced CSS Techniques
                 </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Explore advanced CSS concepts and techniques to create
-                  stunning and responsive web designs.
-                </p>
-                <Button variant="link" size="sm" className="mt-4">
+
+                <button
+                  variant="link"
+                  size="sm"
+                  className="mt-4 p-2 text-green-950 bg-gray-200 rounded-md"
+                >
                   Learn More
-                </Button>
+                </button>
               </div>
             </Link>
           </div>
