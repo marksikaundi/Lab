@@ -3,8 +3,6 @@ import { BsBrowserSafari } from "react-icons/bs";
 import { GrWorkshop } from "react-icons/gr";
 import { MdLeaderboard } from "react-icons/md";
 import { RiNewsLine } from "react-icons/ri";
-import { Separator } from "@/components/ui/separator";
-import { CiMenuKebab } from "react-icons/ci";
 import { RxHome } from "react-icons/rx";
 import Link from "next/link";
 import FooterSidebar from "./FooterSidebar";
