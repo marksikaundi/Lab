@@ -2,6 +2,8 @@ import React from "react";
 import { BsBrowserSafari } from "react-icons/bs";
 import { GrWorkshop } from "react-icons/gr";
 import { MdLeaderboard } from "react-icons/md";
+import { FaCodeCompare } from "react-icons/fa6";
+
 import { RiNewsLine } from "react-icons/ri";
 import { RxHome } from "react-icons/rx";
 import Link from "next/link";
@@ -25,6 +27,15 @@ function LeftSideBar() {
           <BsBrowserSafari className="h-6 w-6 text-green-950" />{" "}
           <span>Browse</span>
         </Link>
+
+        <Link
+          href="/challenges"
+          className="rounded-lg hover:bg-gray-100 w-full flex px-2 h-12 justify-start items-center space-x-2 "
+        >
+          <FaCodeCompare className="h-6 w-6 text-green-950" />{" "}
+          <span>Challenges</span>
+        </Link>
+
         <Link
           href="/workshops"
           className="rounded-lg hover:bg-gray-100 w-full flex px-2 h-12 justify-start items-center space-x-2 "
