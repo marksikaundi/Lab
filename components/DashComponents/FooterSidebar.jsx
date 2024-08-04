@@ -6,7 +6,7 @@ export default function FooterSidebar() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="pt-36 md:pt-5">
+    <div className="pt-36 md:pt-3">
       <div className="w-full px-3">
         <div className="border p-3 rounded-lg mb-4">
           <h2 className="text-lg font-bold py-2">Upgrade to pro</h2>

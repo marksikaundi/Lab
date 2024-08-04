@@ -10,7 +10,7 @@ import FooterSidebar from "./FooterSidebar";
 function LeftSideBar() {
 
   return (
-    <div className="w-72 lg:flex flex-col justify-start items-center mb-20 fixed space-y-2 pt-2 left-0 top-20 z-40 overflow-y-scroll hidden">
+    <div className="w-72 lg:flex flex-col justify-start items-center fixed space-y-2 pt-2 left-0 top-20 z-40 overflow-y-scroll hidden">
       <div className="flex flex-col space-y-2 w-full pt-2 pb-2 px-3">
         <Link
           href="/"
