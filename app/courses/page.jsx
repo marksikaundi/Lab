@@ -10,15 +10,15 @@ import { IoBookOutline } from "react-icons/io5";
 
 export default function page() {
   return (
-    <div className="flex gap-4 mt-2 w-full flex-wrap space-y-4 lg:space-y-0 h-full">
-      <div className="rounded lg:w-[535px] w-full">
+    <div className="grid lg:grid-cols-5 gap-4 mt-2 w-full flex-wrap space-y-4 lg:space-y-0 h-full">
+      <div className="rounded  w-full col-span-5 lg:col-span-3">
         <CldVideoPlayer
           width="1920"
           height="1080"
           src="samples/sea-turtle"
           className="rounded block"
         />
-        <div className="p-4 rounded mt-8 flex flex-col py-4 border">
+        <div className="p-4 rounded mt-4 flex flex-col py-4 border">
           <div className="w-40 bg-gray-100 flex space-x-2 items-center py-3 justify-center rounded mb-3">
             <IoBookOutline className="text-green-950" />
             <span>52 Chapters</span>
@@ -69,22 +69,21 @@ export default function page() {
         </div>
         <div className="h-10"></div>
       </div>
-
-      <div className="lg:w-[300px] w-full">
-        <div className="border p-3 rounded-lg mb-4 bg-green-950  lg:w-[400px] w-full h-[220px] text-white">
+      <div className="lg:col-span-2 col-span-5">
+        <div className="border p-3 rounded-lg mb-4 bg-green-950  w-full text-white ">
           <h2 className="text-2xl font-bold py-2">Ready to start learning?</h2>
           <p className="pb-9 text-md py-2">
             Track your progress, watch with subtitles, change quality & speed,
             and more.
           </p>
-          <button className="bg-white text-green-950 w-full rounded-lg py-2 hover:bg-gray-100 flex items-center justify-center space-x-2">
+          <button className="bg-white text-green-950 w-full rounded-lg py-2 hover:bg-gray-100 flex items-center justify-center space-x-2 mb-3">
             <TbPlayerPlay />
             <span>Start Watching</span>
           </button>
         </div>
         <Link
           href="#"
-          className="border p-3 rounded-lg mb-4  lg:w-[400px] w-full h-[100px] text-white flex flex-col items-center justify-center hover:bg-gray-100"
+          className="border p-3 rounded-lg mb-4 w-full h-[100px] text-white flex flex-col items-center justify-center hover:bg-gray-100"
         >
           <FaGithub className="h-20 w-20 text-green-950" />
           <span className="text-gray-400 hover:text-gray-500">Source code</span>
