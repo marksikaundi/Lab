@@ -7,7 +7,7 @@ export default function FooterSidebar() {
 
   return (
     <div className="">
-      <div className="w-full px-3 py-2">
+      <div className="w-full px-3">
         <div className="border p-3 rounded-lg mb-4">
           <h2 className="text-lg font-bold py-2">Upgrade to pro</h2>
           <p className="pb-2 text-sm">
