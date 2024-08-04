@@ -93,9 +93,9 @@ export default function Challenges() {
           <span className="sr-only">View Challenge</span>
         </Link>
         <div className="p-4">
-          <h3 className="text-xl font-bold">Create a Product Gallery</h3>
+          <h3 className="text-xl font-bold">Design Shopping Cart</h3>
           <p className="text-sm text-muted-foreground">
-            Design a responsive product gallery with Tailwind CSS.
+            Building a fully responsive Shopping cart with Tailwind CSS.
           </p>
           <Button variant="outline" size="sm" className="mt-4">
             View Details
@@ -108,9 +108,9 @@ export default function Challenges() {
           <span className="sr-only">View Challenge</span>
         </Link>
         <div className="p-4">
-          <h3 className="text-xl font-bold">Create a Product Gallery</h3>
+          <h3 className="text-xl font-bold">Create a Price Plan</h3>
           <p className="text-sm text-muted-foreground">
-            Design a responsive product gallery with Tailwind CSS.
+            Design a responsive price plan with Tailwind CSS.
           </p>
           <Button variant="outline" size="sm" className="mt-4">
             View Details
@@ -123,9 +123,9 @@ export default function Challenges() {
           <span className="sr-only">View Challenge</span>
         </Link>
         <div className="p-4">
-          <h3 className="text-xl font-bold">Create a Product Gallery</h3>
+          <h3 className="text-xl font-bold">Create a Header Menu</h3>
           <p className="text-sm text-muted-foreground">
-            Design a responsive product gallery with Tailwind CSS.
+            Implement a responsive header menu with Tailwind CSS.
           </p>
           <Button variant="outline" size="sm" className="mt-4">
             View Details
