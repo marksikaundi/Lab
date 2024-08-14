@@ -2,7 +2,9 @@ import Link from "next/link";
 import Challenges from "../../components/ChallengeComponents/Challenges";
 
 const getChallenges = async () => {
-  const res = await fetch("http://localhost:3000/api/challenges");
+  const res = await fetch("https://lupleg.website/api/challenges");
+  // const res = await fetch("http://localhost:3000/api/challenges");
+
   if (!res.ok) {
     throw new Error("Failed to fetch challenges");
   }
