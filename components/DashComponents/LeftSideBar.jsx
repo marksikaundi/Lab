@@ -10,10 +10,9 @@ import Link from "next/link";
 import FooterSidebar from "./FooterSidebar";
 
 function LeftSideBar() {
-
   return (
-    <div className="w-72 lg:flex flex-col justify-start items-center fixed space-y-2 pt-2 left-0 top-20 z-40 overflow-y-scroll hidden">
-      <div className="flex flex-col space-y-2 w-full pt-2 pb-20 px-3">
+    <div className="w-72 lg:flex flex-col justify-start items-center fixed space-y-2 pt-2 left-0 top-20 z-40 overflow-y-scroll hidden h-[86%]">
+      <div className="flex flex-col space-y-2 w-full pt-2 pb-2 px-3">
         <Link
           href="/"
           className="rounded-lg  w-full flex px-2 h-12 justify-start items-center space-x-2 hover:bg-gray-100"
@@ -58,7 +57,7 @@ function LeftSideBar() {
           <span>NewsLetter</span>
         </Link>
       </div>
-      <FooterSidebar/>
+      <FooterSidebar />
     </div>
   );
 }
