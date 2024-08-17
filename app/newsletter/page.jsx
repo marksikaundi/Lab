@@ -1,6 +1,6 @@
 import React from "react";
 
-function page() {
+function NewsLatter() {
   return (
     <div className="w-full flex flex-col justify-center items-center md:items-start h-[400px] md:px-40 space-y-4 ">
       <h1 className="text-xl md:text-2xl lg:text-4xl font-bold w-full">Want platform news and updates? Sign up for the newsletter.</h1>
@@ -12,4 +12,4 @@ function page() {
   );
 }
 
-export default page;
+export default NewsLatter;
