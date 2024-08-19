@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import DashNav from "@/components/DashComponents/DashNav";
 import LeftSideBar from "@/components/DashComponents/LeftSideBar";
 import { ClerkProvider } from "@clerk/nextjs";

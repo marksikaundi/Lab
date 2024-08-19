@@ -9,6 +9,9 @@ const challengeSchema = new mongoose.Schema({
     type: String,
     required: true
   }
+},
+{
+  timestamps: true
 });
 
 export default mongoose.models.Challenge || mongoose.model('Challenge', challengeSchema);
