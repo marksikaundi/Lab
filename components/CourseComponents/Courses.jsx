@@ -1,21 +1,32 @@
 "use client";
 
-import { CldVideoPlayer } from "next-cloudinary";
-import "next-cloudinary/dist/cld-video-player.css";
 import { TbPlayerPlay } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { Progress } from "@/components/ui/progress";
 import { IoBookOutline } from "react-icons/io5";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 
 export default function Courses({ courses }) {
   const [courseIndex, setCourseIndex] = useState(0);
 
-  // Ensure courseIndex is within bounds
+  // Get the current course based on courseIndex
   const course = courses[courseIndex] || courses[0];
+
+  // This effect will sync the courseIndex with the URL parameters if needed
+  useEffect(() => {
+    const storedIndex = sessionStorage.getItem("currentCourseIndex");
+    if (storedIndex) {
+      setCourseIndex(parseInt(storedIndex, 10));
+    }
+  }, []);
+
+  const handleCourseChange = (newIndex) => {
+    setCourseIndex(newIndex);
+    sessionStorage.setItem("currentCourseIndex", newIndex);
+  };
 
   return (
     <div>
@@ -60,14 +71,12 @@ export default function Courses({ courses }) {
         </div>
         <div className="lg:col-span-2 col-span-5">
           <div className="border p-3 rounded-lg mb-4 bg-green-950 w-full text-white">
-            <h2 className="text-2xl font-bold py-2">
-              Ready to start learning?
-            </h2>
+            <h2 className="text-2xl font-bold py-2">Ready to start learning?</h2>
             <p className="pb-9 text-md py-2">
               Track your progress, watch with subtitles, change quality & speed, and more.
             </p>
             <Link
-              href={`/course/${course._id}`}
+              href={`/course/${course._id}/${course.sections[0].section_title}`}
               className="bg-white text-green-950 w-full rounded-lg py-2 hover:bg-gray-100 flex items-center justify-center space-x-2 mb-3"
             >
               <TbPlayerPlay />
@@ -85,8 +94,8 @@ export default function Courses({ courses }) {
       </div>
       <Pagination
         courseIndex={courseIndex}
-        setCourseIndex={setCourseIndex}
-        courses={courses}
+        setCourseIndex={handleCourseChange}
+        sections={courses}
       />
     </div>
   );

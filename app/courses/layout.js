@@ -1,3 +1,4 @@
+
 import { Inter } from "next/font/google";
 import "../globals.css";
 import DashNav from "@/components/DashComponents/DashNav";
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
           <DashNav />
           <div className="">
             <LeftSideBar />
-            <div className="p-8 px-4 lg:ml-72 mt-14 mr-0">{children}</div>
+            <div className="p-8 px-4 lg:ml-72 mt-14 mr-0">
+              {children}
+              </div>
           </div>
         </body>
       </ClerkProvider>

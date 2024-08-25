@@ -35,7 +35,7 @@ export default async function RootLayout({ children, params }) {
         <body className={inter.className}>
           <DashNav />
           <div className="h-full w-full grid grid-cols-12 pt-20">
-            <div className="col-span-3">
+            <div className="lg:col-span-3 hidden lg:block">
               <div className="w-72 lg:flex flex-col justify-start items-center fixed space-y-2 pt-2 left-0 top-20 z-40 overflow-y-scroll hidden h-[86%]">
                 <div className="flex flex-col space-y-2 w-full pt-2 pb-2 px-3">
                   <h1 className="text-2xl font-">{courseTitle}</h1>
@@ -59,7 +59,7 @@ export default async function RootLayout({ children, params }) {
                 <FooterSidebar />
               </div>
             </div>
-            <div className="col-span-8">{children}</div>
+            <div className="col-span-12 lg:col-span-8 w-full px-2">{children}</div>
           </div>
         </body>
       </ClerkProvider>

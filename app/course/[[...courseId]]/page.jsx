@@ -15,7 +15,7 @@ export default async function CoursePage({ params }) {
   const courseId = params.courseId[0];
   const course = courses.find((course) => course._id === courseId);
   let section = course.sections.find(
-    (section) => section.section_title === "Program Structure:"
+    (section) => section.section_title === course.sections[0].section_title
   );
   if (params.courseId[1]) {
     section = course.sections.find(
@@ -25,7 +25,7 @@ export default async function CoursePage({ params }) {
   }
   return (
     <div className="h-screen w-full pt-4">
-      <Course course={course} section={section} />
+      <Course section={section} sections={course.sections} courseId={courseId} />
     </div>
   );
 }

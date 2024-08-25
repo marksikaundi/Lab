@@ -1,16 +1,21 @@
+'use client';
+
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 
-export default function Pagination({ courses, courseIndex, setCourseIndex }) {
-  const totalCourses = courses.length;
+export default function Pagination({courseIndex, setCourseIndex, sections = [] }) {
+  const totalSections = sections.length;
+
   const handlePrevious = () => {
     if (courseIndex > 0) {
-      setCourseIndex(courseIndex - 1);
+      const newIndex = courseIndex - 1;
+      setCourseIndex(newIndex);
     }
   };
 
   const handleNext = () => {
-    if (courseIndex < totalCourses - 1) {
-      setCourseIndex(courseIndex + 1);
+    if (courseIndex < totalSections - 1) {
+      const newIndex = courseIndex + 1;
+      setCourseIndex(newIndex);
     }
   };
 
@@ -26,7 +31,7 @@ export default function Pagination({ courses, courseIndex, setCourseIndex }) {
         </button>
         <button
           onClick={handleNext}
-          disabled={courseIndex === totalCourses - 1}
+          disabled={courseIndex === totalSections - 1}
           className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
         >
           Next
@@ -36,7 +41,7 @@ export default function Pagination({ courses, courseIndex, setCourseIndex }) {
         <div>
           <p className="text-sm text-gray-700">
             Showing <span className="font-medium">{courseIndex + 1}</span> of{' '}
-            <span className="font-medium">{totalCourses}</span> courses
+            <span className="font-medium">{totalSections}</span>
           </p>
         </div>
         <div>
@@ -54,7 +59,7 @@ export default function Pagination({ courses, courseIndex, setCourseIndex }) {
             </button>
             <button
               onClick={handleNext}
-              disabled={courseIndex === totalCourses - 1}
+              disabled={courseIndex === totalSections - 1}
               className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
             >
               <span className="sr-only">Next</span>
