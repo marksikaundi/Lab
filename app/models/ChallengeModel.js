@@ -1,17 +1,34 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const challengeSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true
+const ChallengeSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+      trim: true,
+      unique: true,
+    },
+    description: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    difficulty: {
+      type: String,
+      enum: ["Easy", "Medium", "Hard"],
+      default: "Medium",
+    },
+    tags: {
+      type: [String],
+      default: [],
+    },
   },
-  description: {
-    type: String,
-    required: true
+  {
+    timestamps: true,
   }
-},
-{
-  timestamps: true
-});
+);
 
-export default mongoose.models.Challenge || mongoose.model('Challenge', challengeSchema);
+const Challenge =
+  mongoose.models.Challenge || mongoose.model("Challenge", ChallengeSchema);
+
+export default Challenge;

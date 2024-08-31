@@ -12,10 +12,8 @@ import Pagination from "./Pagination";
 export default function Courses({ courses }) {
   const [courseIndex, setCourseIndex] = useState(0);
 
-  // Get the current course based on courseIndex
   const course = courses[courseIndex] || courses[0];
 
-  // This effect will sync the courseIndex with the URL parameters if needed
   useEffect(() => {
     const storedIndex = sessionStorage.getItem("currentCourseIndex");
     if (storedIndex) {
