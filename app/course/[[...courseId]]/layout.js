@@ -6,7 +6,8 @@ import FooterSidebar from "@/components/DashComponents/FooterSidebar";
 import Link from "next/link";
 
 const getCourses = async () => {
-  const res = await fetch("http://localhost:3000/api/courses");
+  // const res = await fetch("http://localhost:3000/api/courses");
+  const res = await fetch(process.env.GET_COURSES_URL);
   if (!res.ok) {
     throw new Error("Failed to fetch courses");
   }
@@ -59,7 +60,9 @@ export default async function CourseLayout({ children, params }) {
                 <FooterSidebar />
               </div>
             </div>
-            <div className="col-span-12 lg:col-span-8 w-full px-2">{children}</div>
+            <div className="col-span-12 lg:col-span-8 w-full px-2">
+              {children}
+            </div>
           </div>
         </body>
       </ClerkProvider>
