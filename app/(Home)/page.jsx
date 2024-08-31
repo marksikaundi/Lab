@@ -49,7 +49,7 @@ export default async function ExploreCourses() {
                       : course.description}
                   </p>
                   <Button variant="link" size="sm" className="mt-4">
-                    Learn More →
+                    Learn more →
                   </Button>
                 </div>
               </Link>
