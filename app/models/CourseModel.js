@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const listItemSchema = new mongoose.Schema({
   list_item_title: {
@@ -12,7 +12,7 @@ const listItemSchema = new mongoose.Schema({
 const sectionSchema = new mongoose.Schema({
   section_title: {
     type: String,
-    required: true
+    required: true,
   },
   section_description: {
     type: String,
@@ -23,35 +23,29 @@ const sectionSchema = new mongoose.Schema({
 const courseSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   description: {
     type: String,
-    required: true
+    required: true,
   },
   chapters: {
     type: Number,
-    default: 0
+    default: 0,
   },
   courseImage: {
     type: String,
     required: true,
-    default: '/profile-sample.jpeg'
-  },
-  overview: {
-    type: String,
-    required: true
+    default: "/profile-sample.jpeg",
   },
   technologies: [String],
   sections: [sectionSchema],
-  timestamps: true
+  timestamps: true,
 });
 
-export default mongoose.models.Course || mongoose.model('Course', courseSchema);
-
+export default mongoose.models.Course || mongoose.model("Course", courseSchema);
 
 // COURSE DOCUMENT EXAMPLE
-
 
 // {
 //   "title": "Digital Skills Training",
@@ -451,6 +445,6 @@ export default mongoose.models.Course || mongoose.model('Course', courseSchema);
 //               }
 //           ]
 //       }
-      
+
 //   ]
 // }

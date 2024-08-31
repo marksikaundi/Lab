@@ -20,7 +20,7 @@ function Course({ section, sections, courseId }) {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <h1 className="w-full bg-gray-50 border-l-4 border-green-900 text-xl md:text-4xl mb-8 pl-4">
         {section.section_title}
       </h1>

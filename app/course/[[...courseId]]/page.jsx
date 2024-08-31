@@ -1,8 +1,10 @@
 import React from "react";
 import Course from "@/components/CourseComponents/Course";
+import Link from "next/link";
+import { IoCaretBackOutline } from "react-icons/io5";
 
 const getCourses = async () => {
-  const res = await fetch(process.env.GET_COURSE_URL);
+  const res = await fetch(process.env.GET_COURSES_URL);
   if (!res.ok) {
     throw new Error("Failed to fetch courses");
   }
@@ -15,16 +17,23 @@ export default async function CoursePage({ params }) {
   const courseId = params.courseId[0];
   const course = courses.find((course) => course._id === courseId);
   let section = course.sections.find(
-    (section) => section.section_title === course.sections[0].section_title,
+    (section) => section.section_title === course.sections[0].section_title
   );
   if (params.courseId[1]) {
     section = course.sections.find(
       (section) =>
-        section.section_title === decodeURIComponent(params.courseId[1]),
+        section.section_title === decodeURIComponent(params.courseId[1])
     );
   }
   return (
     <div className="h-screen w-full pt-4">
+      <Link
+        href="/courses"
+        className="flex px-2 py-2 rounded-md border mt-2 mb-8 w-28 items-center space-x-2"
+      >
+         <IoCaretBackOutline className="text-green-900"/>
+        <span>Courses</span>
+      </Link>
       <Course
         section={section}
         sections={course.sections}

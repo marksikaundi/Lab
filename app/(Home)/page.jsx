@@ -23,10 +23,10 @@ export default async function ExploreCourses() {
           </h2>
         </div>
 
-        {courses.map((course) => (
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+          {courses.map((course) => (
             <div className="overflow-hidden rounded-lg border border-muted bg-background shadow-sm transition-all hover:scale-[1.02] hover:shadow-md focus-within:scale-[1.02] focus-within:shadow-md">
-              <Link href="#" className="block h-full" prefetch={false}>
+              <Link href={`/course/${course._id}`} className="block h-full" prefetch={false}>
                 <img
                   src="https://utfs.io/f/b9b4d679-34e2-4664-93b8-2c8283fa88dd-1h.png"
                   alt="Course Image"
@@ -40,7 +40,7 @@ export default async function ExploreCourses() {
                     {course.title}
                   </h3>
                   <p className="mt-2 text-muted-foreground" key={course._id}>
-                  {course.description.length > 100
+                    {course.description.length > 100
                       ? course.description.substring(0, 100) + "..."
                       : course.description}
                   </p>
@@ -50,8 +50,8 @@ export default async function ExploreCourses() {
                 </div>
               </Link>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="mt-8 text-center ">
         <Button

@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Challenge from "../../../../components/ChallengeComponents/Challenge";
+import { IoCaretBackOutline } from "react-icons/io5";
 
 const getChallenges = async () => {
   const res = await fetch(process.env.GET_CHALLENGES_URL);
@@ -20,9 +21,10 @@ async function SingleChallenge({ params }) {
     <div className="mt-10">
       <Link
         href="/challenges"
-        className="px-6 py-2 rounded-md border mt-2 mb-8"
+        className="flex px-2 py-2 rounded-md border mt-2 mb-8 w-32 items-center space-x-2"
       >
-        Challenges
+         <IoCaretBackOutline className="text-green-900"/>
+        <span>Challenges</span>
       </Link>
       <Challenge
         challengeId={challenge_id}
