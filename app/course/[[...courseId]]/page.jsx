@@ -3,7 +3,6 @@ import Course from "@/components/CourseComponents/Course";
 
 const getCourses = async () => {
   const res = await fetch(process.env.GET_COURSE_URL);
-  // fetch("http://localhost:3000/api/courses");
   if (!res.ok) {
     throw new Error("Failed to fetch courses");
   }

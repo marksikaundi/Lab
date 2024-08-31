@@ -69,9 +69,10 @@ export default function Courses({ courses }) {
         </div>
         <div className="lg:col-span-2 col-span-5">
           <div className="border p-3 rounded-lg mb-4 bg-green-950 w-full text-white">
-            <h2 className="text-2xl font-bold py-2">Ready to start learning?</h2>
+            <p className="text-2xl font-bold py-2">Ready to start learning?</p>
             <p className="pb-9 text-md py-2">
-              Track your progress, watch with subtitles, change quality & speed, and more.
+              Track your progress, watch with subtitles, change quality & speed,
+              and more.
             </p>
             <Link
               href={`/course/${course._id}/${course.sections[0].section_title}`}
@@ -86,7 +87,9 @@ export default function Courses({ courses }) {
             className="border p-3 rounded-lg mb-4 w-full h-[100px] text-white flex flex-col items-center justify-center hover:bg-gray-100"
           >
             <FaGithub className="h-40 w-20 text-green-950" />
-            <span className="text-gray-400 hover:text-gray-500">Source code</span>
+            <span className="text-gray-400 hover:text-gray-500">
+              Source code
+            </span>
           </Link>
         </div>
       </div>

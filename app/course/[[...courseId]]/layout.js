@@ -21,7 +21,7 @@ export const metadata = {
     "Join us in shaping the future of technology in Africa! Our developer community empowers Africans with the skills and resources to solve problems, drive innovation, and create a more sustainable future.",
 };
 
-export default async function RootLayout({ children, params }) {
+export default async function CourseLayout({ children, params }) {
   const data = await getCourses();
   const courses = Array.isArray(data.courses) ? data.courses : [];
   const courseId = params.courseId[0];

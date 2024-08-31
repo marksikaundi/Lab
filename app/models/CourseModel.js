@@ -38,9 +38,12 @@ const courseSchema = new mongoose.Schema({
     required: true,
     default: '/profile-sample.jpeg'
   },
+  overview: {
+    type: String,
+    required: true
+  },
   technologies: [String],
-  sections: [sectionSchema],  // Ensures that sections is an array of section objects
-}, {
+  sections: [sectionSchema],
   timestamps: true
 });
 
