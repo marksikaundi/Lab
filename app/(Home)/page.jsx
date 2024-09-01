@@ -32,7 +32,7 @@ export default async function ExploreCourses() {
                 prefetch={false}
               >
                 <img
-                  src="https://utfs.io/f/b9b4d679-34e2-4664-93b8-2c8283fa88dd-1h.png"
+                  src="https://utfs.io/f/7c679591-6991-4402-bc63-0ee97010fc6f-1g.png"
                   alt="Course Image"
                   width={600}
                   height={400}
