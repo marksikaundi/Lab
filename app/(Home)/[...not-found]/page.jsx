@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col mt-14 justify-center items-center">
+    <div className="flex flex-col mt-10 justify-center items-center">
       <div className="w-full items-center flex flex-col mb-4">
         <Image src="/not-found.svg" width={300} height={300} alt="404" />
       </div>

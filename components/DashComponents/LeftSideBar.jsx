@@ -1,5 +1,7 @@
 import React from "react";
 import { BsBrowserSafari } from "react-icons/bs";
+import { MdExplore } from "react-icons/md";
+
 import { GrWorkshop } from "react-icons/gr";
 import { MdLeaderboard } from "react-icons/md";
 import { FaCodeCompare } from "react-icons/fa6";
@@ -21,11 +23,10 @@ function LeftSideBar() {
           <RxHome className="h-6 w-6 text-green-950" /> <span>Home</span>
         </Link>
         <Link
-          href="/dashboard"
+          href="/discover"
           className="rounded-lg w-full flex px-2 h-12 justify-start items-center space-x-2 hover:bg-gray-100"
         >
-          <BsBrowserSafari className="h-6 w-6 text-green-950" />{" "}
-          <span>Browse</span>
+          <MdExplore className="h-6 w-6 text-green-950" /> <span>Discover</span>
         </Link>
         <Link
           href="/courses"

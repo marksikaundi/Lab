@@ -9,7 +9,7 @@ const getCourses = async () => {
   return res.json();
 };
 
-export default async function ExploreCourses() {
+export default async function DiscoverCourses() {
   const data = await getCourses();
   const courses = Array.isArray(data.courses) ? data.courses : [];
   console.log(courses);
@@ -19,7 +19,7 @@ export default async function ExploreCourses() {
       <div className="container">
         <div className="mb-8 text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Explore Our Courses
+            Discover Courses Available
           </h2>
         </div>
 
@@ -56,15 +56,6 @@ export default async function ExploreCourses() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mt-8 text-center ">
-        <Button
-          variant="outline"
-          className="bg-green-950 hover:bg-green-950 text-white hover:text-white p-6"
-          size="sm"
-        >
-          View All Courses
-        </Button>
       </div>
     </section>
   );
