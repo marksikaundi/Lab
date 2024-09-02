@@ -40,10 +40,6 @@ const courseSchema = new mongoose.Schema({
   },
   technologies: [String],
   sections: [sectionSchema],
-  // timestamps: true,
 });
 
 export default mongoose.models.Course || mongoose.model("Course", courseSchema);
-
-// COURSE DOCUMENT EXAMPLE
-
