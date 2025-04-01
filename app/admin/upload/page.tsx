@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import Image from "next/image"
 import { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Button } from "@/components/ui/button"
@@ -125,7 +125,7 @@ export default function UploadPage() {
 
       // Redirect to admin dashboard
       router.push("/admin/dashboard")
-    } catch (error) {
+    } catch {
       toast({
         title: "Upload failed",
         description: "There was an error uploading your course",
@@ -301,16 +301,19 @@ export default function UploadPage() {
                   <div className="space-y-2 mt-6">
                     <Label htmlFor="thumbnail">Custom Thumbnail (Optional)</Label>
                     <p className="text-xs text-muted-foreground mb-2">
-                      By default, we'll use the YouTube video thumbnail. You can upload a custom one if you prefer.
+                      By default, we&apos;ll use the YouTube video thumbnail. You can upload a custom one if you prefer.
                     </p>
                     <div className="border-2 border-dashed rounded-lg p-6 flex flex-col items-center justify-center">
                       {thumbnailFile ? (
                         <div className="text-center">
                           <div className="w-full aspect-video bg-muted rounded-md mb-2 overflow-hidden">
-                            <img
-                              src={URL.createObjectURL(thumbnailFile) || "/placeholder.svg"}
+                            
+                            <Image
+                              src={thumbnailFile ? URL.createObjectURL(thumbnailFile) : "/placeholder.svg"}
                               alt="Thumbnail preview"
                               className="w-full h-full object-cover"
+                              layout="fill"
+                              objectFit="cover"
                             />
                           </div>
                           <Button type="button" variant="ghost" size="sm" onClick={() => setThumbnailFile(null)}>

@@ -208,7 +208,7 @@ export default function WorkshopPage({ params }: WorkshopPageProps) {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">What you'll learn</h3>
+                  <h3 className="text-xl font-semibold mb-3">What you&apos;ll learn</h3>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {workshop.whatYouWillLearn.map((item, index) => (
                       <li key={index} className="flex items-start">
