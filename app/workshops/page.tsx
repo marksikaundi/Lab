@@ -247,10 +247,7 @@ export default function WorkshopsPage() {
   }
 
   // Format date to display in a more readable format
-  const formatDate = (dateString: string) => {
-    const options: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" }
-    return new Date(dateString).toLocaleDateString(undefined, options)
-  }
+  // Removed unused formatDate function to resolve the error
 
   return (
     <main className="min-h-screen bg-background">
@@ -365,7 +362,7 @@ export default function WorkshopsPage() {
             <div className="text-center py-12 border rounded-lg">
               <h3 className="text-xl font-semibold mb-2">No workshops found</h3>
               <p className="text-muted-foreground">
-                Try adjusting your search or filter to find what you're looking for.
+                Try adjusting your search or filter to find what you&apos;re looking for.
               </p>
             </div>
           )}

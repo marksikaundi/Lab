@@ -12,9 +12,9 @@ import Cookies from "js-cookie"
 
 export default function AdminDashboard() {
   const router = useRouter()
-  const [courseCount, setCourseCount] = useState(6)
-  const [userCount, setUserCount] = useState(1245)
-  const [recentCourses, setRecentCourses] = useState([
+  const [courseCount, ] = useState(6)
+  const [userCount, ] = useState(1245)
+  const [recentCourses, ] = useState([
     { id: "1", title: "Build a YouTube Clone", date: "2023-03-15", views: 1245 },
     { id: "2", title: "Build a Google Docs Clone", date: "2023-02-28", views: 987 },
     { id: "3", title: "Build a Jira Clone", date: "2023-01-10", views: 1532 },
