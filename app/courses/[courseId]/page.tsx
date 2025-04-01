@@ -125,7 +125,7 @@ export default function CoursePage({ params }: CoursePageProps) {
               <TabsContent value="overview" className="mt-4">
                 <h3 className="text-xl font-semibold mb-2">About this course</h3>
                 <p className="text-muted-foreground">{course.description}</p>
-                <h3 className="text-xl font-semibold mt-6 mb-2">What you'll learn</h3>
+                <h3 className="text-xl font-semibold mt-6 mb-2">What you&apos;ll learn</h3>
                 <ul className="list-disc pl-5 text-muted-foreground">
                   <li>How to set up a Next.js project with TypeScript</li>
                   <li>Building responsive UI with Tailwind CSS</li>
