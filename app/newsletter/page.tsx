@@ -67,7 +67,7 @@ export default function NewsletterPage() {
       })
 
       setSubscribed(true)
-    } catch (error) {
+    } catch {
       toast({
         title: "Subscription failed",
         description: "There was an error subscribing to the newsletter.",
@@ -113,7 +113,7 @@ export default function NewsletterPage() {
                   <div>
                     <h3 className="font-semibold">Early Access</h3>
                     <p className="text-muted-foreground">
-                      Be the first to know about new courses and workshops before they're released.
+                      Be the first to know about new courses and workshops before they&apos;re released.
                     </p>
                   </div>
                 </li>
@@ -151,7 +151,7 @@ export default function NewsletterPage() {
                         <Mail className="h-8 w-8 text-primary" />
                       </div>
                       <h3 className="text-xl font-semibold mb-2">Thank you for subscribing!</h3>
-                      <p className="text-muted-foreground mb-4">You'll start receiving our newsletter at {email}</p>
+                      <p className="text-muted-foreground mb-4">You&apos;ll start receiving our newsletter at {email}</p>
                       <Button variant="outline" onClick={() => setSubscribed(false)}>
                         Subscribe another email
                       </Button>
@@ -226,8 +226,8 @@ export default function NewsletterPage() {
               <Card>
                 <CardContent className="pt-6">
                   <p className="italic text-muted-foreground mb-4">
-                    "The newsletter has been incredibly helpful for staying up-to-date with the latest web development
-                    trends. The tutorials are concise and practical."
+                  &apos;The newsletter has been incredibly helpful for staying up-to-date with the latest web development
+                    trends. The tutorials are concise and practical.&apos;
                   </p>
                   <div className="flex items-center">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium">
@@ -243,8 +243,8 @@ export default function NewsletterPage() {
               <Card>
                 <CardContent className="pt-6">
                   <p className="italic text-muted-foreground mb-4">
-                    "I've learned so much from the exclusive tutorials. The early access to new courses has been a game
-                    changer for my learning journey."
+                  &apos;I&apos;ve learned so much from the exclusive tutorials. The early access to new courses has been a game
+                    changer for my learning journey.&apos;
                   </p>
                   <div className="flex items-center">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium">
@@ -260,8 +260,8 @@ export default function NewsletterPage() {
               <Card>
                 <CardContent className="pt-6">
                   <p className="italic text-muted-foreground mb-4">
-                    "The industry insights have helped me make better technology choices for my projects. Highly
-                    recommend subscribing!"
+                  &apos;The industry insights have helped me make better technology choices for my projects. Highly
+                    recommend subscribing!&apos;
                   </p>
                   <div className="flex items-center">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium">
@@ -372,7 +372,7 @@ export default function NewsletterPage() {
             ) : (
               <div className="flex items-center justify-center text-primary">
                 <CheckCircle className="h-5 w-5 mr-2" />
-                <span>You're subscribed!</span>
+                <span>You&apos;re subscribed!</span>
               </div>
             )}
           </div>

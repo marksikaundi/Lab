@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image"
 import { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Button } from "@/components/ui/button"
@@ -112,10 +112,13 @@ export default function Dashboard() {
                   <Link href={`/courses/${course.id}`} key={course.id}>
                     <Card className="overflow-hidden hover:shadow-md transition-shadow">
                       <div className="relative aspect-video">
-                        <img
+                        
+                        <Image
                           src={course.image || "/placeholder.svg"}
                           alt={course.title}
                           className="w-full h-full object-cover"
+                          layout="fill"
+                          objectFit="cover"
                         />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                           <h3 className="text-white font-semibold">{course.title}</h3>
@@ -148,7 +151,7 @@ export default function Dashboard() {
                   <BookOpen className="h-12 w-12 text-muted-foreground mb-4" />
                   <h3 className="text-xl font-semibold mb-2">No courses yet</h3>
                   <p className="text-muted-foreground text-center mb-4">
-                    You haven't enrolled in any courses yet. Browse our catalog to find courses that interest you.
+                    You haven&apos;t enrolled in any courses yet. Browse our catalog to find courses that interest you.
                   </p>
                   <Button asChild>
                     <Link href="/">Browse Courses</Link>
@@ -193,7 +196,7 @@ export default function Dashboard() {
                   <Calendar className="h-12 w-12 text-muted-foreground mb-4" />
                   <h3 className="text-xl font-semibold mb-2">No upcoming workshops</h3>
                   <p className="text-muted-foreground text-center mb-4">
-                    You haven't registered for any workshops yet. Browse our workshops to find events that interest you.
+                    You haven&apos;t registered for any workshops yet. Browse our workshops to find events that interest you.
                   </p>
                   <Button asChild>
                     <Link href="/workshops">Browse Workshops</Link>
@@ -211,10 +214,12 @@ export default function Dashboard() {
                   <Link href={`/courses/${course.id}`} key={course.id}>
                     <Card className="overflow-hidden hover:shadow-md transition-shadow">
                       <div className="relative aspect-video">
-                        <img
+                        <Image
                           src={course.image || "/placeholder.svg"}
                           alt={course.title}
                           className="w-full h-full object-cover"
+                          layout="fill"
+                          objectFit="cover"
                         />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                           <h3 className="text-white font-semibold">{course.title}</h3>
@@ -233,7 +238,7 @@ export default function Dashboard() {
                   <BookMarked className="h-12 w-12 text-muted-foreground mb-4" />
                   <h3 className="text-xl font-semibold mb-2">No saved courses</h3>
                   <p className="text-muted-foreground text-center mb-4">
-                    You haven't saved any courses yet. Browse our catalog and save courses for later.
+                    You haven&apos;t saved any courses yet. Browse our catalog and save courses for later.
                   </p>
                   <Button asChild>
                     <Link href="/">Browse Courses</Link>
