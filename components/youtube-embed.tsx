@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useState, useRef } from "react"
+import Image from "next/image"
 import { Play } from "lucide-react"
 
 interface YouTubeEmbedProps {
@@ -36,14 +38,10 @@ export function YouTubeEmbed({
   mute = false,
   className = "",
   aspectRatio = "16:9",
-  quality = "hd720",
   onReady,
-  onPlay,
-  onPause,
-  onEnd,
 }: YouTubeEmbedProps) {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [isPlaying, setIsPlaying] = useState(autoplay)
+  const [, setIsPlaying] = useState(autoplay)
   const [showThumbnail, setShowThumbnail] = useState(!autoplay)
   const iframeRef = useRef<HTMLIFrameElement>(null)
 
@@ -114,10 +112,12 @@ export function YouTubeEmbed({
       <div className="relative" style={{ paddingBottom: getAspectRatioPadding() }}>
         {showThumbnail ? (
           <>
-            <img
+            <Image
               src={getThumbnailUrl() || "/placeholder.svg"}
               alt={title}
-              className="absolute inset-0 w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0"
             />
             <div
               className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/20 hover:bg-black/40 transition-colors"
