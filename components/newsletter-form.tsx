@@ -46,7 +46,7 @@ export function NewsletterForm({
 
       setSubscribed(true)
       onSuccess?.()
-    } catch (error) {
+    } catch {
       toast({
         title: "Subscription failed",
         description: "There was an error subscribing to the newsletter.",
@@ -97,7 +97,7 @@ export function NewsletterForm({
               <Mail className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Thank you for subscribing!</h3>
-            <p className="text-muted-foreground mb-4">You'll start receiving our newsletter at {email}</p>
+            <p className="text-muted-foreground mb-4">You&apos;ll start receiving our newsletter at {email}</p>
             <Button variant="outline" onClick={() => setSubscribed(false)}>
               Subscribe another email
             </Button>
