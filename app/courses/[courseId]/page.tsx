@@ -1,23 +1,22 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Navbar } from "@/components/navbar"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ChevronLeft, Book, Star, Users } from "lucide-react"
-import Link from "next/link"
-import { YouTubeEmbed, extractYouTubeVideoId } from "@/components/youtube-embed"
+import { useState } from "react";
+import { Navbar } from "@/components/navbar";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ChevronLeft, Book, Star, Users } from "lucide-react";
+import Link from "next/link";
+import {
+  YouTubeEmbed,
+  extractYouTubeVideoId,
+} from "@/components/youtube-embed";
 // Add imports for Clerk components
-import { SignedIn, SignedOut } from "@clerk/nextjs"
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
-interface CoursePageProps {
-  params: {
-    courseId: string
-  }
-}
-
-export default function CoursePage({ params }: CoursePageProps) {
-  const [activeChapter, setActiveChapter] = useState(0)
+export default function CoursePage({
+  params,
+}: Awaited<{ params: { courseId: string } }>) {
+  const [activeChapter, setActiveChapter] = useState(0);
 
   // In a real app, this would fetch this data from an API
   const course = {
@@ -61,25 +60,28 @@ export default function CoursePage({ params }: CoursePageProps) {
     rating: 4.8,
     students: 1234,
     technologies: ["Next.js", "TypeScript", "Tailwind"],
-  }
+  };
 
   const handleChapterClick = (index: number) => {
-    setActiveChapter(index)
+    setActiveChapter(index);
     // Scroll to the video player
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   // Add the handleEnroll function
   const handleEnroll = () => {
     // In a real app, this would make an API call to enroll the user
-    alert("You have successfully enrolled in this course!")
-  }
+    alert("You have successfully enrolled in this course!");
+  };
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <div className="container mx-auto px-4 py-8">
-        <Link href="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-6">
+        <Link
+          href="/"
+          className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-6"
+        >
           <ChevronLeft className="mr-1 h-4 w-4" />
           Back to courses
         </Link>
@@ -98,19 +100,28 @@ export default function CoursePage({ params }: CoursePageProps) {
               </div>
               <div className="flex items-center">
                 <Book className="h-4 w-4 text-muted-foreground" />
-                <span className="ml-1 text-sm">{course.chapters.length} chapters</span>
+                <span className="ml-1 text-sm">
+                  {course.chapters.length} chapters
+                </span>
               </div>
             </div>
 
             <div className="mb-8">
-              {course.chapters[activeChapter] && extractYouTubeVideoId(course.chapters[activeChapter].videoUrl) && (
-                <YouTubeEmbed
-                  videoId={extractYouTubeVideoId(course.chapters[activeChapter].videoUrl)!}
-                  title={course.chapters[activeChapter].title}
-                  showInfo={false}
-                  showRelated={false}
-                />
-              )}
+              {course.chapters[activeChapter] &&
+                extractYouTubeVideoId(
+                  course.chapters[activeChapter].videoUrl
+                ) && (
+                  <YouTubeEmbed
+                    videoId={
+                      extractYouTubeVideoId(
+                        course.chapters[activeChapter].videoUrl
+                      )!
+                    }
+                    title={course.chapters[activeChapter].title}
+                    showInfo={false}
+                    showRelated={false}
+                  />
+                )}
               <h2 className="text-xl font-semibold mt-4">
                 {activeChapter + 1}. {course.chapters[activeChapter]?.title}
               </h2>
@@ -123,9 +134,13 @@ export default function CoursePage({ params }: CoursePageProps) {
                 <TabsTrigger value="instructor">Instructor</TabsTrigger>
               </TabsList>
               <TabsContent value="overview" className="mt-4">
-                <h3 className="text-xl font-semibold mb-2">About this course</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  About this course
+                </h3>
                 <p className="text-muted-foreground">{course.description}</p>
-                <h3 className="text-xl font-semibold mt-6 mb-2">What you&apos;ll learn</h3>
+                <h3 className="text-xl font-semibold mt-6 mb-2">
+                  What you&apos;ll learn
+                </h3>
                 <ul className="list-disc pl-5 text-muted-foreground">
                   <li>How to set up a Next.js project with TypeScript</li>
                   <li>Building responsive UI with Tailwind CSS</li>
@@ -149,13 +164,17 @@ export default function CoursePage({ params }: CoursePageProps) {
                         <span className="font-medium mr-2">{index + 1}.</span>
                         <span>{chapter.title}</span>
                       </div>
-                      <span className="text-sm text-muted-foreground">{chapter.duration}</span>
+                      <span className="text-sm text-muted-foreground">
+                        {chapter.duration}
+                      </span>
                     </div>
                   ))}
                 </div>
               </TabsContent>
               <TabsContent value="instructor" className="mt-4">
-                <h3 className="text-xl font-semibold mb-4">Meet your instructor</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  Meet your instructor
+                </h3>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="h-16 w-16 rounded-full bg-muted flex items-center justify-center text-xl font-bold">
                     {course.instructor
@@ -165,12 +184,15 @@ export default function CoursePage({ params }: CoursePageProps) {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium">{course.instructor}</h4>
-                    <p className="text-sm text-muted-foreground">Professional Developer & Instructor</p>
+                    <p className="text-sm text-muted-foreground">
+                      Professional Developer & Instructor
+                    </p>
                   </div>
                 </div>
                 <p className="text-muted-foreground">
-                  Experienced developer with a passion for teaching. Has worked with various technologies and
-                  frameworks, specializing in React and Next.js development.
+                  Experienced developer with a passion for teaching. Has worked
+                  with various technologies and frameworks, specializing in
+                  React and Next.js development.
                 </p>
               </TabsContent>
             </Tabs>
@@ -178,10 +200,15 @@ export default function CoursePage({ params }: CoursePageProps) {
 
           <div className="lg:col-span-1">
             <div className="sticky top-8 border rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Course technologies</h3>
+              <h3 className="text-xl font-semibold mb-4">
+                Course technologies
+              </h3>
               <div className="flex flex-wrap gap-2 mb-6">
                 {course.technologies.map((tech) => (
-                  <span key={tech} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                  <span
+                    key={tech}
+                    className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
+                  >
                     {tech}
                   </span>
                 ))}
@@ -193,7 +220,11 @@ export default function CoursePage({ params }: CoursePageProps) {
               </SignedIn>
               <SignedOut>
                 <Button className="w-full mb-3" asChild>
-                  <Link href={`/sign-in?redirect_url=${encodeURIComponent(window.location.pathname)}`}>
+                  <Link
+                    href={`/sign-in?redirect_url=${encodeURIComponent(
+                      window.location.pathname
+                    )}`}
+                  >
                     Sign in to Enroll
                   </Link>
                 </Button>
@@ -206,6 +237,5 @@ export default function CoursePage({ params }: CoursePageProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
