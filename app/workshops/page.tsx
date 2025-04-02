@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Navbar } from "@/components/navbar"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -42,7 +42,7 @@ export default function WorkshopsPage() {
   const [showFilters, setShowFilters] = useState(false)
 
   // Mock data for workshops
-  const workshops: Workshop[] = [
+  const workshops: Workshop[] = useMemo(() => [
     {
       id: "1",
       title: "Building Real-time Applications with WebSockets",
@@ -165,7 +165,7 @@ export default function WorkshopsPage() {
       isLive: false,
       isFeatured: false,
     },
-  ]
+  ], [])
 
   // Extract unique categories and levels for filters
   const categories = ["All", ...Array.from(new Set(workshops.map((workshop) => workshop.category)))]
@@ -201,7 +201,7 @@ export default function WorkshopsPage() {
     result = sortWorkshops(result, sortBy)
 
     setFilteredWorkshops(result)
-  }, [searchQuery, selectedCategory, selectedLevel, sortBy])
+  }, [searchQuery, selectedCategory, selectedLevel, sortBy, workshops])
 
   // Sort workshops based on selected sort option
   const sortWorkshops = (workshops: Workshop[], sortOption: string) => {
