@@ -10,7 +10,7 @@ import { useUser, UserButton, SignedIn, SignedOut } from "@clerk/nextjs"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const { user, isLoaded } = useUser()
+  const { user } = useUser()
 
   const navItems = [
     { label: "Browse", href: "/" },

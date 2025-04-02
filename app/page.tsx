@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -16,65 +15,68 @@ import Link from "next/link"
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [filteredCourses, setFilteredCourses] = useState<any[]>([])
+  const [filteredCourses, setFilteredCourses] = useState<typeof courses>([])
 
   // Mock data for courses
-  const courses = [
-    {
-      id: "1",
-      title: "Build a YouTube Clone",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "2025",
-      chapters: 39,
-      technologies: ["Next.js", "TypeScript", "Tailwind"],
-      featured: true,
-    },
-    {
-      id: "2",
-      title: "Build a Google Docs Clone",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "2024",
-      chapters: 33,
-      technologies: ["Next.js", "TypeScript", "Tailwind"],
-      featured: true,
-    },
-    {
-      id: "3",
-      title: "Build a Jira Clone",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "2024",
-      chapters: 41,
-      technologies: ["Next.js", "TypeScript", "Tailwind"],
-      featured: true,
-    },
-    {
-      id: "4",
-      title: "Build a Slack Clone",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "2024",
-      chapters: 42,
-      technologies: ["Next.js", "TypeScript", "React"],
-      featured: false,
-    },
-    {
-      id: "5",
-      title: "Build a Canva Clone",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "2024",
-      chapters: 52,
-      technologies: ["Next.js", "TypeScript", "Canvas API"],
-      featured: false,
-    },
-    {
-      id: "6",
-      title: "Build a Finance Platform",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "2024",
-      chapters: 31,
-      technologies: ["React.js", "TypeScript", "Node.js"],
-      featured: false,
-    },
-  ]
+  const courses = useMemo(
+    () => [
+      {
+        id: "1",
+        title: "Build a YouTube Clone",
+        image: "/placeholder.svg?height=400&width=600",
+        year: "2025",
+        chapters: 39,
+        technologies: ["Next.js", "TypeScript", "Tailwind"],
+        featured: true,
+      },
+      {
+        id: "2",
+        title: "Build a Google Docs Clone",
+        image: "/placeholder.svg?height=400&width=600",
+        year: "2024",
+        chapters: 33,
+        technologies: ["Next.js", "TypeScript", "Tailwind"],
+        featured: true,
+      },
+      {
+        id: "3",
+        title: "Build a Jira Clone",
+        image: "/placeholder.svg?height=400&width=600",
+        year: "2024",
+        chapters: 41,
+        technologies: ["Next.js", "TypeScript", "Tailwind"],
+        featured: true,
+      },
+      {
+        id: "4",
+        title: "Build a Slack Clone",
+        image: "/placeholder.svg?height=400&width=600",
+        year: "2024",
+        chapters: 42,
+        technologies: ["Next.js", "TypeScript", "React"],
+        featured: false,
+      },
+      {
+        id: "5",
+        title: "Build a Canva Clone",
+        image: "/placeholder.svg?height=400&width=600",
+        year: "2024",
+        chapters: 52,
+        technologies: ["Next.js", "TypeScript", "Canvas API"],
+        featured: false,
+      },
+      {
+        id: "6",
+        title: "Build a Finance Platform",
+        image: "/placeholder.svg?height=400&width=600",
+        year: "2024",
+        chapters: 31,
+        technologies: ["React.js", "TypeScript", "Node.js"],
+        featured: false,
+      },
+    ],
+    []
+  )
 
   // Filter categories
   const categories = ["All", "Next.js", "React.js", "MySQL", "MongoDB", "Prisma", "Tailwind", "Node.js", "Supabase"]
@@ -99,7 +101,7 @@ export default function Home() {
     }
 
     setFilteredCourses(result)
-  }, [searchQuery, selectedCategory])
+  }, [searchQuery, selectedCategory, courses])
 
   // Handle search submission
   const handleSearch = () => {
