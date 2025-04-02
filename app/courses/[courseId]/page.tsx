@@ -13,9 +13,13 @@ import {
 // Add imports for Clerk components
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 
-export default function CoursePage({
-  params,
-}: Awaited<{ params: { courseId: string } }>) {
+interface CoursePageProps {
+  params: {
+    courseId: string;
+  };
+}
+
+export default function CoursePage({ params }: CoursePageProps) {
   const [activeChapter, setActiveChapter] = useState(0);
 
   // In a real app, this would fetch this data from an API
