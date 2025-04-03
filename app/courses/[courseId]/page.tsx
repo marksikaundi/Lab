@@ -3,11 +3,9 @@ import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import CourseContent from "./course-content";
 
-// Update the page props type to match Next.js App Router expectations
+// In Next.js 13+ with App Router, you don't need to define PageProps like this
 type PageProps = {
-  params: {
-    courseId: string;
-  };
+  params: { courseId: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
