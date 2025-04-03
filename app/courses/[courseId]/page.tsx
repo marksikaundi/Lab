@@ -1,14 +1,15 @@
 import { Navbar } from "@/components/navbar";
-import { ChevronLeft,  } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import CourseContent from "./course-content";
 
-// Define proper types for a Next.js page
-interface PageProps {
+// Update the page props type to match Next.js App Router expectations
+type PageProps = {
   params: {
     courseId: string;
   };
-}
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export default function CoursePage({ params }: PageProps) {
   // In a real app, this would fetch this data from an API
