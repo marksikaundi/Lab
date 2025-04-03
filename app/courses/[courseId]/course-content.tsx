@@ -69,9 +69,7 @@ export default function CourseContent({ course }: CourseContentProps) {
 
         <div className="mb-8">
           {course.chapters[activeChapter] &&
-            extractYouTubeVideoId(
-              course.chapters[activeChapter].videoUrl
-            ) && (
+            extractYouTubeVideoId(course.chapters[activeChapter].videoUrl) && (
               <YouTubeEmbed
                 videoId={
                   extractYouTubeVideoId(
@@ -95,9 +93,7 @@ export default function CourseContent({ course }: CourseContentProps) {
             <TabsTrigger value="instructor">Instructor</TabsTrigger>
           </TabsList>
           <TabsContent value="overview" className="mt-4">
-            <h3 className="text-xl font-semibold mb-2">
-              About this course
-            </h3>
+            <h3 className="text-xl font-semibold mb-2">About this course</h3>
             <p className="text-muted-foreground">{course.description}</p>
             <h3 className="text-xl font-semibold mt-6 mb-2">
               What you&apos;ll learn
@@ -133,9 +129,7 @@ export default function CourseContent({ course }: CourseContentProps) {
             </div>
           </TabsContent>
           <TabsContent value="instructor" className="mt-4">
-            <h3 className="text-xl font-semibold mb-4">
-              Meet your instructor
-            </h3>
+            <h3 className="text-xl font-semibold mb-4">Meet your instructor</h3>
             <div className="flex items-center gap-4 mb-4">
               <div className="h-16 w-16 rounded-full bg-muted flex items-center justify-center text-xl font-bold">
                 {course.instructor
@@ -151,9 +145,9 @@ export default function CourseContent({ course }: CourseContentProps) {
               </div>
             </div>
             <p className="text-muted-foreground">
-              Experienced developer with a passion for teaching. Has worked
-              with various technologies and frameworks, specializing in
-              React and Next.js development.
+              Experienced developer with a passion for teaching. Has worked with
+              various technologies and frameworks, specializing in React and
+              Next.js development.
             </p>
           </TabsContent>
         </Tabs>
@@ -161,9 +155,7 @@ export default function CourseContent({ course }: CourseContentProps) {
 
       <div className="lg:col-span-1">
         <div className="sticky top-8 border rounded-lg p-6">
-          <h3 className="text-xl font-semibold mb-4">
-            Course technologies
-          </h3>
+          <h3 className="text-xl font-semibold mb-4">Course technologies</h3>
           <div className="flex flex-wrap gap-2 mb-6">
             {course.technologies.map((tech) => (
               <span
